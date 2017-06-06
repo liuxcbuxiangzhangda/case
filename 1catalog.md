@@ -40,6 +40,8 @@
 ###angularjs###
 1、angularjs表单验证
 > [https://github.com/liuxcbuxiangzhangda/case/blob/master/6angularjs/angularjs%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/6angularjs/angularjs%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81.html)
+> ng-message：[http://www.jb51.net/article/77049.htm](http://www.jb51.net/article/77049.htm)
+> [https://www.oschina.net/translate/angularjs-form-validation](https://www.oschina.net/translate/angularjs-form-validation)
 
 2、省市区控件
 > [https://github.com/liuxcbuxiangzhangda/case/tree/master/6angularjs/shengshiqu](https://github.com/liuxcbuxiangzhangda/case/tree/master/6angularjs/shengshiqu)
@@ -65,3 +67,7 @@
 
 4、压缩后上传
 > [https://github.com/liuxcbuxiangzhangda/case/tree/master/6angularjs/compressUpload](https://github.com/liuxcbuxiangzhangda/case/tree/master/6angularjs/compressUpload)
+
+###bootstrap###
+1、fileinput上传控件
+2、途牛首页

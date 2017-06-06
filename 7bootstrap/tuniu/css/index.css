@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    float: left;
+}
+.nav{
+    background-color: #404040;
+    padding: 5px 20px 0px 10px;
+
+}
+.nav li{
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bolder;
+}
+.nav .active{
+    background-color: #fff;
+    color: #22c233;
+}
+.J_DetailFavor-mainImg{
+    display: block;
+    height: 100%;
+    background:url(../images/J_DetailFavor-mainImg.jpeg)  center center no-repeat;
+}
+.section-box{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 40px 40px 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+}
+.section-box-head{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    background-image: url(../images/icons-s2f900ecd6e.png);
+    background-position: -168px -535px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    height: 78px;
+    width: 78px;
+}
+.section-box-body{
+    padding-left: 80px
+}
+.section-box-head h2{
+    margin: 0 12px 12px 0;
+    padding: 13px 10px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+}
+.section-box-title{
+    margin-bottom: 10px;
+    padding: 5px 0 5px 10px;
+    background: #f6f6f6;
+}
+.section-box-title h3{
+    height: 20px;
+    padding-left: 10px;
+    border-left: 4px solid #22c233;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.section-box-content{
+    margin: 10px 0 20px 10px;
+}
+.detail-favor-coupon{
+
+}
+.detail-favor-item{
+    margin-bottom: 20px;
+}
+.detail-favor-row{
+    line-height: 24px;
+}
+.detail-favor-row-title{
+    float: left;
+    width: 75px;
+    color: #999;
+}
+.detail-favor-row-content{
+    margin-left: 75px;
+    color: #333;
+}
+.Route-title{
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #22c233;
+}
+.Route-description{
+    position: relative;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    padding: 10px 20px;
+    max-height: 275px;
+    overflow: hidden;
+}
+.Route-description-detail p{
+    position: relative;
+    min-height: 30px;
+    padding-left: 65px;
+    padding-right: 20px
+}
+.Route-description-detail p strong{
+    position: absolute;
+    padding-right: 30px;
+    font-weight: bold;
+    left:0px;
+    top: 0px;
+}
+.route-description-toggle{
+    position: absolute;
+    display: inline-block;
+    left: 85px;
+    bottom: 0;
+    line-height: 20px;
+    color: #22c233;
+    cursor:pointer;
+}
+.Route-detail{
+    position: relative;
+    margin-left: 38px;
+    margin-bottom: 40px;
+    border-left: 3px solid #eee;
+    padding-left: 35px;
+}
+.Route-detail-nav{
+    position: absolute;
+    left: -115px;
+    border-right: 2px solid #f6f6f6;
+}
+.Route-detail-nav-item{
+    clear: both;
+}
+.Route-detail-nav-item .icon{
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    background-image: url(../images/icons-s2f900ecd6e.png);
+    background-position: -251px -158px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}
+
+.Route-detail-nav-item .everyDay span{
+    display: block;
+    width: 60px;
+    height: 24px;
+    background: #eee;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.Route-detail-nav-item .everyDayPlan li{
+    clear: both;
+    position: relative;
+}
+.Route-detail-nav-item .everyDayPlan span{
+    display: block;
+    width: 70px;
+    height: 24px;
+    overflow: hidden;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    text-align: right;
+    line-height: 24px;
+}
+.Route-detail-day .day-title{
+    position: relative;
+    margin: 30px 0 15px;
+    color: #333;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Route-detail-day .day-title strong{
+    font-weight: bold;
+}
+.Route-detail-day .dayLine{
+    border-top:1px solid #ddd;
+}
+.day-item .day-item-title{
+    position: relative;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+.day-item .day-item-title strong{
+    font-weight: normal;
+
+}
+.day-item .day-item-des{
+    position: relative;
+    color: #666;
+    margin: 10px 0;
+
+}
+.day-item .day-item-line{
+    margin: 10px 0px;
+    border: 0;
+    border-top: 1px dotted #ddd;
+}
