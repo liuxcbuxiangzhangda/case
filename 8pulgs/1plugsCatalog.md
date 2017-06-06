@@ -1,5 +1,7 @@
 ##1、sweetalert##
 [https://github.com/liuxcbuxiangzhangda/sweetalert](https://github.com/liuxcbuxiangzhangda/sweetalert)
+
+[https://github.com/liuxcbuxiangzhangda/case/blob/master/8pulgs/sweetalert.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/8pulgs/sweetalert.html)
 ##2、oclazyload.js##
 ###oclazyload.js是angularjs的库，实现懒加载###
 ##3、jquery之家：各种jquery,css,html库##

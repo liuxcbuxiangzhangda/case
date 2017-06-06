@@ -74,3 +74,5 @@
 
 2、途牛首页
 > [https://github.com/liuxcbuxiangzhangda/case/tree/master/7bootstrap/tuniu](https://github.com/liuxcbuxiangzhangda/case/tree/master/7bootstrap/tuniu)
+###plugs####
+1、弹出框插件：sweetalert
