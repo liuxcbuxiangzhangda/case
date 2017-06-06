@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>split</title>
+</head>
+<body>
+<button onclick="splitstr()"></button>
+<script>
+        function splitstr() {
+            /* var url=location.search();*/
+            var url="?traceId=09012345670000000148";
+            var theRequest = new Object();//对象
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&"); //将字符串分割成字符串数组
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = (strs[i].split("=")[1]);
+                }
+            }
+            console.log(theRequest);
+        }
+</script>
+</body>
+</html>

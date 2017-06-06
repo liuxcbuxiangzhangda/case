@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的date对象</title>
+</head>
+<body>
+<h3><a href="http://www.w3school.com.cn/jsref/jsref_obj_date.asp">时间对象手册，挨个验证</a></h3>
+常用的时间函数：getDate();setDate()<br/>getDay();<br/>getTime();setTime()<br/>getFullYear();<br/>parse();<br/>
+ getDate()与getUTCDate()的区别是本地和全球时间
+</body>
+<script>
+    var newDate=new Date();  /*date()方法参数为空的话就是当前日期，new是一个操作符，可以定义数组，时间等*/
+    console.log(newDate);
+    var oldDate=new Date("2012-12-05");
+    console.log(oldDate);
+    console.log(oldDate.constructor())
+    console.log(newDate.valueOf())
+    console.log(newDate.getTime())
+
+</script>
+</html>

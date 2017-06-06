@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板引擎之handlebar</title>
+</head>
+<script src="js/handlebars-v4.0.5.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<body>
+<h3>学习网址：<a href="https://github.com/liuxcbuxiangzhangda/handlebars.js">资料一</a></h3>
+<button type="button" onclick="tep(data1)"></button>
+<div id="add"></div>
+</body>
+</html>
+<script>
+    var data1={ "name": "Alan", "hometown": "Somewhere, TX",
+            "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};
+    function tep(data) {
+        var source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +
+                "{{kids.length}} kids:</p>" +
+                "<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>";
+        var template = Handlebars.compile(source);
+
+       /* var data = { "name": "Alan", "hometown": "Somewhere, TX",
+            "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};*/
+        var result = template(data);
+        $("#add").html(result);     /*html()是jquery的方法*/
+    }
+
+</script>

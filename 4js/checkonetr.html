@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击一列就点击一整行，点击每行的最后一列无效</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<style>
+    td{padding: 10px 10px;
+        border: 1px solid #333333;
+    }
+</style>
+<body>
+点击某一列（除了每一行的最后一列）选择一整行
+<div id="grid">
+
+    <table>
+        <thead>
+                <td><input type="checkbox"></td>
+                <td>内容</td>
+                <td>内容</td>
+                <td>内容</td>
+                <td>修改</td>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>内容</td>
+            <td>内容</td>
+            <td>内容</td>
+            <td>修改</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>内容</td>
+            <td>内容</td>
+            <td>内容</td>
+            <td>修改</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>内容</td>
+            <td>内容</td>
+            <td>内容</td>
+            <td>修改</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+<script>
+    $("#grid tbody tr td").each(function(){
+        $(this).click(function(){
+            var eachLastTd=$(this).parent().find("td:last").text();
+            var checkedTest=$(this).text();
+            if(eachLastTd!=checkedTest){
+                var checked = $(this).parent().find("input[type='checkbox']")[0];
+                if(checked.checked){
+                    checked.checked = false;
+                    $(this).parent().removeClass("selected");
+                }else {
+                    checked.checked = true;
+                    $(this).parent().addClass("selected");
+                }
+            }
+        });
+    })
+</script>
+</html>

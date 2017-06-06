@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>footer的特殊位置</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;/*重点*/
+    }
+    .warp{
+        min-height: 100%;   /*重点*/
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .content{
+        background-color: rosybrown;
+       /* height: 1400px;*/
+        font-size:20px;
+        text-align:center;
+    }
+    footer{
+        position: absolute;
+        bottom: 0px;
+        background-color: aqua;
+        height: 30px;
+        width: 100%;
+    }
+</style>
+<body>
+<div class="warp">
+    <div class="content">内容少时footer始终在窗口底部，内容多的时候footer在内容下面</div>
+    <footer></footer>
+    http://www.jb51.net/article/62154.htm
+    http://www.cnblogs.com/mindsbook/archive/2009/09/19/javascriptYouMustKnowPrototype.html
+    http://www.cnblogs.com/ziyunfei/p/5890322.html
+    https://www.sogou.com/sgo?query=arguments.callee%E4%B8%BA%E4%BD%95%E8%A2%AB%E5%BA%9F%E5%BC%83%E4%BA%86&ie=utf8&_ast=1491639808&_asf=null&w=01025001&hdq=sogou-clse-7221e5c8ec6b08ef-0099&duppid=1&cid=&lxea=6-2-E-8.2.0.9335-3-CN5101-50-0-1-778302F17F748EBEB13529B0CBA5821E-254&cid=&oq=arguments.callee&ri=2&sourceid=sugg&suguuid=2a6c0b6e-5a72-417b-846c-55c3310075c1&stj=1%3B0%3B0%3B0&stj2=0&stj0=1&stj1=0&hp=0&hp1=&suglabid=suglabId_1&sut=1098&sst0=1491639767922&lkt=0%2C0%2C0&sugsuv=1473748693737291&sugtime=1491639767922
+</div>
+
+</body>
+</html>
