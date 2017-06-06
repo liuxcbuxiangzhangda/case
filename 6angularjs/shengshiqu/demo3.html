@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp" ng-controller="myControl">
+<head>
+    <meta charset="UTF-8">
+    <title>三</title>
+    <link href="js/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/pcc3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    .tab-pane li{
+        float: left;
+        padding: 10px;
+    }
+    .tabli{
+        background-color: red;
+    }
+</style>
+<body >
+<tabs>
+    <pane title={{showPro}} >
+        <ul>
+            <li ng-repeat="P in pro" value="{{P.province}}" ng-click="chosePro($event)">{{P.name}}</li>
+        </ul>
+    </pane>
+    <pane title={{showCi}} >
+        <ul>
+            <li ng-repeat="C in cis" ng-click="choseCity($event)" value="{{C.city}}">{{C.name}}</li>
+        </ul>
+    </pane>
+    <pane title={{showDi}}>
+        <ul>
+            <li ng-repeat="D in Dis" ng-click="choseDistrict($event)" value="{{D.country}}">{{D.name}}</li>
+        </ul>
+    </pane>
+</tabs>
+</body>
+<script>
+
+</script>
+</html>

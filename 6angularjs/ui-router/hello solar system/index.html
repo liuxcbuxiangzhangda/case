@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello solar system</title>
+</head>
+<script src="../../js/angular.min.js"></script>
+<script src="../../js/angular-ui-router.min.js"></script>
+<script src="index.js"></script>
+<style>
+    .active{
+        color: red;
+        font-weight: bolder;
+    }
+</style>
+<body ng-app="hellosystem" ng-controller="myCtrol">
+<a ui-sref="hello" ui-sref-active="active">hello页面链接</a>
+<a ui-sref="about" ui-sref-active="active">about页面链接</a>
+<a ui-sref="people" ui-sref-active="active">people页面链接</a>
+<ui-view></ui-view>
+</body>
+</html>

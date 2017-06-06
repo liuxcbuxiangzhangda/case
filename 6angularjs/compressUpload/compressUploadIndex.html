@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>compressUpload</title>
+</head>
+<script src="../js/angular.min.js"></script>
+<script src="js/index1.js"></script>
+<style>
+    *{margin: 0;padding: 0;}
+    li{list-style-type: none;}
+    a,input{outline: none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+    #choose{display: none;}
+</style>
+<body ng-app="compressupload" ng-controller="">
+<input type="file" id="choose" accept="image/*" multiple ng-change="">
+<ul class="img-list"></ul>
+<a id="upload">上传图片</a>
+
+</body>
+</html>

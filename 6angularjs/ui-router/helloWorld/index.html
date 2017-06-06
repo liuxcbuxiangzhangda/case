@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helloWorld</title>
+</head>
+<!--angularjs要在ui-router前面-->
+<script src="../../js/angular.min.js"></script>
+<script src="../../js/angular-ui-router.min.js"></script>
+<script src="js/hello.js"></script>
+<style>
+    .active{
+        color:red;
+        font-weight: bolder;
+    }
+</style>
+<body ng-app="helloWorld">
+<!--Add some ui-sref links. When clicked, the links will activate a state.-->
+<a ui-sref="hello" ui-sref-active="active">hello</a>
+<a ui-sref="about" ui-sref-active="active">about</a>
+
+<ui-view></ui-view><!--The <ui-view> tag is a UI-Router viewport. When a state is activated, the state’s view (the template:) will be loaded into the viewport-->
+</body>
+</html>
