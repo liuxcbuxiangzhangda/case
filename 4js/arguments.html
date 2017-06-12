@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数参数</title>
+</head>
+<body>
+<h5>1、即便 你 定义 的 函数 只 接收 两个 参数， 在调 用 这个 函数 时 也 未必 一定 要 传递 两个 参数。 可以 传递 一个、 三个 甚至 不 传递 参数， 而 解析 器 永远 不会有 什么 怨言。
+</h5>
+<h5>
+    2、其实， arguments 对象 只是 与 数组 类似（ 它 并不是 Array 的 实例）， 因为 可以 使用 方 括号 语法 访问 它的 每一个 元素（ 即 第一个 元素 是 arguments[ 0]， 第二个 元素 是 argumetns[ 1]， 以此类推）， 使用 length 属性 来 确定 传递 进来 多少 个 参数。
+</h5>
+</body>
+<script>
+    function mm() {
+        for(var i=0;i<arguments.length;i++){
+            alert("输出函数的实参"+i+":"+arguments[i]);
+        }
+    }
+    mm("ff","ss","kk");
+</script>
+</html>

@@ -58,3 +58,6 @@ js框架： node angularjs react
 > 谷歌调试
 
 [http://blog.csdn.net/zhenzigis/article/details/50556440](http://blog.csdn.net/zhenzigis/article/details/50556440)
+
+前端常用调试工具：[http://www.360doc.com/content/16/0827/11/36064839_586261176.shtml](http://www.360doc.com/content/16/0827/11/36064839_586261176.shtml)
+谷歌调试：[http://web.jobbole.com/89344/](http://web.jobbole.com/89344/)
