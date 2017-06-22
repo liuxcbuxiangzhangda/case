@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>手机端布局</title>
+</head>
+<style>
+    html,body{
+        margin: 0; padding: 0;
+    }
+    body{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    #logo{
+        width: 25vw;
+        height: 25vh;
+    }
+    #title{
+        height: 10vh;
+    }
+    #search{
+        width: 80vw;
+        height:10vh;
+        border:1px solid;
+        margin-bottom: 10px;
+    }
+    #search input{
+        width: 100%; height: 100%; outline: none; border: none; margin: 0; padding: 0;
+    }
+    .all{
+        position: relative;
+        margin: 0 auto;
+        width: 80vw;
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+    .every{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        height: 33%;
+    }
+</style>
+<body>
+<div id="logo">
+
+</div>
+<div id="title">
+    追溯码查询
+</div>
+<div id="search">
+    <input type="text" />
+</div>
+<div class="all">
+    <div class="every">1</div>
+    <div class="every">2</div>
+    <div class="every">3</div>
+    <div class="every">4</div>
+    <div class="every">5</div>
+    <div class="every">6</div>
+    <div class="every">7</div>
+    <div class="every">8</div>
+    <div class="every">9</div>
+    <div class="every">10</div>
+    <div class="every">11</div>
+    <div class="every">12</div>
+
+</div>
+
+</body>
+</html>
