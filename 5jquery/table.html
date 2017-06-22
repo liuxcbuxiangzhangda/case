@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>手机端布局</title>
+    <script src="../js/jquery.min.js"></script>
 </head>
 <style>
     html,body{
@@ -69,10 +70,26 @@
     <div class="every">8</div>
     <div class="every">9</div>
     <div class="every">10</div>
-    <div class="every">11</div>
-    <div class="every">12</div>
+    <div class="every">清空</div>
+    <div class="every">查询</div>
 
 </div>
 
 </body>
+<script>
+    var inputText="";
+    $(".every ").click(function () {
+        var everyText=$(this).text();
+        if(everyText=="清空"){
+
+        }else if(everyText=="查询"){
+
+        }else {
+            inputText+=everyText;
+            $("#search input").val(inputText);
+        }
+    })
+
+
+</script>
 </html>
