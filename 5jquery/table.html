@@ -72,16 +72,18 @@
     <div class="every">10</div>
     <div class="every">清空</div>
     <div class="every">查询</div>
-
 </div>
+<style>
 
+</style>
 </body>
 <script>
     var inputText="";
     $(".every ").click(function () {
         var everyText=$(this).text();
         if(everyText=="清空"){
-
+            inputText="";
+            $("#search input").val(inputText);
         }else if(everyText=="查询"){
 
         }else {
