@@ -100,5 +100,8 @@ reduce（）和reduceRight（）
 8、函数的arguments属性
 > [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/arguments.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/arguments.html)
 
+9、原生js实现路由
+> [http://blog.csdn.net/sunxinty/article/details/52586556](http://blog.csdn.net/sunxinty/article/details/52586556)
+
 
 
