@@ -14,4 +14,16 @@
 
 匿名函数使用最多的场景是回调函数
 
+###gulp使用4个api和插件和能完成的任务###
+
+> 4个API(gulp.task,gulp.src,gulp.dest,gulp.watch)
+
+> 插件：gulp-load-plugins,gulp-rename,gulp-uglify,gulp-minify-css,gulp-minify-html,gulp-jshint,gulp-concat,gulp-less,gulp-sass,gulp-imagemin,gulp-livereload，先要用npm或者yarn安装在package.js
+
+> gulp可以完成的任务：编译less和sass，压缩css，html,js，图片等，文件合并，js代码检查，自动刷新
+
+> [http://www.cnblogs.com/2050/p/4198792.html](http://www.cnblogs.com/2050/p/4198792.html)
+> [http://www.cnblogs.com/lovelyun/p/5372251.html](http://www.cnblogs.com/lovelyun/p/5372251.html)
+
+
 rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成
