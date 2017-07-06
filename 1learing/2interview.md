@@ -24,6 +24,29 @@
 
 > [http://www.cnblogs.com/2050/p/4198792.html](http://www.cnblogs.com/2050/p/4198792.html)
 > [http://www.cnblogs.com/lovelyun/p/5372251.html](http://www.cnblogs.com/lovelyun/p/5372251.html)
+###工厂模式和构造函数模式的诞生###
+> 虽然object构造函数和字面量（var mm={}）可以创建单个对象，但是代码重复量很多
+
+> [http://blog.csdn.net/flyingpig2016/article/details/52939679](http://blog.csdn.net/flyingpig2016/article/details/52939679)
+###工厂模式的优缺点###
+> 可以创建多个对象，但是不知道对象的类型（这是与构造函数模式最大的不同，构造函数模式创建的对象都有一个constructor属性，这个属性指向构造函数，所以创建的对象自己是谁产生的，而工厂模式创建的对象不知道）
+> [http://www.cnblogs.com/lwl8/p/3614586.html](http://www.cnblogs.com/lwl8/p/3614586.html)
+###构造函数的优缺点###
+> 不能实现对象相同属性和方法的共享
+> [http://blog.csdn.net/flyingpig2016/article/details/52939679](http://blog.csdn.net/flyingpig2016/article/details/52939679)
+###通过构造函数，创建对象，new操作符要经历的过程（4个）###
+> 1.创建一个空对象
+> 2.将构造函数的作用域赋给新对象（因为this指向了这个新对象）
+> 3.执行构造函数中的代码（为新对象添加属性）
+> 4.返回新对象
+###构造函数与普通函数的不同###
+> 唯一的不同就是调用方式不同，凡是可以通过new创建对象的都是构造函数，不能的就是普通函数
+###类，对象，实例的区别###
+> 类是对象的细分，对象是类的具体实物（h2o是类，农夫山泉是对象）
+###使用require.js的好处###
+> [http://www.ruanyifeng.com/blog/2012/11/require_js.html](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
 
 
-rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成
+
+
+rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，
