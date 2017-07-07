@@ -147,7 +147,7 @@
         <entry file="file://$PROJECT_DIR$/4js/wenhai/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
               </folding>
@@ -868,12 +868,12 @@
       <option name="presentableId" value="Default" />
       <updated>1498456732318</updated>
       <workItem from="1498456734091" duration="9739000" />
-      <workItem from="1499045381586" duration="6829000" />
+      <workItem from="1499045381586" duration="8619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16568000" />
+    <option name="totallyTimeSpent" value="18358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
@@ -1152,7 +1152,7 @@
     <entry file="file://$PROJECT_DIR$/4js/wenhai/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
           </folding>
