@@ -43,10 +43,20 @@
 > 唯一的不同就是调用方式不同，凡是可以通过new创建对象的都是构造函数，不能的就是普通函数
 ###类，对象，实例的区别###
 > 类是对象的细分，对象是类的具体实物（h2o是类，农夫山泉是对象）
+> var d=new Date();date()是类，d是对象，这个过程是实例化
 ###使用require.js的好处###
 > [http://www.ruanyifeng.com/blog/2012/11/require_js.html](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
-
-
-
-
+###面向对象的特征和作用###
+> 1.解决代码重用问题
+> 2.特征：抽象，继承，封装，多态
+> 3.有点：a.开发时间短，效率高，可靠性高，所开发的程序更强壮。由于面向对象编程的可重用性，可以在应用程序中大量采用成熟的类库，从而缩短了开发时间。
+b。应用程序更易于维护、更新和升级。继承和封装使得应用程序的修改带来的影响更加局部化。
+> [http://www.cnblogs.com/hnrainll/archive/2012/09/18/2690846.html](http://www.cnblogs.com/hnrainll/archive/2012/09/18/2690846.html)
+> [https://zhidao.baidu.com/question/555833631.html](https://zhidao.baidu.com/question/555833631.html)
+###函数作为参数传递###
+> 回调函数是典型（用匿名的函数作为参数）
+> [http://blog.csdn.net/kaituozhe345/article/details/7236454](http://blog.csdn.net/kaituozhe345/article/details/7236454)
+###原生js去除前后的空格###
+> charAt（）；
+> [http://www.cnblogs.com/mingforyou/p/3930638.html](http://www.cnblogs.com/mingforyou/p/3930638.html)
 rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，
