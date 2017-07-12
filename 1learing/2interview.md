@@ -209,4 +209,10 @@ div p#large ul.list li  114
 ###页面加载完成时就执行的js代码###
 > [http://blog.csdn.net/zdnlp/article/details/14231067](http://blog.csdn.net/zdnlp/article/details/14231067)
 ###selectIdex和index###
+###js设置的css样式比外部css权重高，所以js设置了样式，hover的样式可能不起作用###
+> [http://blog.csdn.net/wxl1555/article/details/53037571](http://blog.csdn.net/wxl1555/article/details/53037571)
+###原生js改变css样式###
+> [http://www.jb51.net/article/108550.htm](http://www.jb51.net/article/108550.htm)
+
+
 rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议
