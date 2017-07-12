@@ -3,8 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>百度搜索页面</title>
+    <script src="baidu.js"></script>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    header{
+        height: 32px;
+        width: 100%;
+        border-top:1px solid #EBEBEB;
+        border-bottom: 1px solid #EBEBEB;
+    }
+    .content{
+        width: 893px;
+        margin: 0 auto;
+    }
+    .search{
+        width: 640px;
+        margin: 9px auto 72px auto;
+    }
+    .search img{
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+    .searchText{
+        width: 534px;/*534*/
+        border: 1px solid #CCCCCC;
+        height: 38px;
+        padding: 0px;
+    }
+    .searchBtn{
+        display: inline-block;
+        width:104px ;
+        height: 40px;
+        background-color: #3388FF;
+        text-align: center;
+        line-height: 40px;
+        color: #FFFFFF;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+       float: right;
+    }
+    .detailContent{
+        border: 1px solid #E9E9E9;
+    }
+    .nav{
+        height: 39px;
+        border-bottom: 1px solid #E9E9E9;
+    }
+    .nav li{
+        height: 41px;
+        padding:0 26px ;
+        float: left;
+        line-height: 41px;
+        color: #333333;
+        font-size: 14px;
+        margin-top: -1px;
+    }
+    .nav li:hover{
+        color: #FFFFFF;
+        background-color: #B3B6BB;
+    }
+
+</style>
+
 <body>
+<header></header>
+<div class="content">
+    <div class="search">
+        <img src="images/bd_logo1_31bdc765.png" height="129" width="270"/>
+        <form class="searchWrap">
+            <input class="searchText" type="text">
+            <input type="submit" class="searchBtn" value="百度一下"/>
+        </form>
+
+    </div>
+    <div class="detailContent">
+        <ul class="nav">
+            <li>我的关注</li>
+            <li>推荐</li>
+            <li>导航</li>
+            <li>视频</li>
+        </ul>
+        <ul class="navContent">
+            <li style="background-color: #00a0df;display: block">ffffffffffffffffffff</li>
+            <li style="background-color: red;display: none">llllllllll</li>
+            <li style="background-color: yellow;display: none">jjjj</li>
+            <li style="background-color: #0A246A;display: none">yyyyy</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<script>
+
+</script>
 
 </body>
 </html>

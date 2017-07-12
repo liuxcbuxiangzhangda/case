@@ -1,0 +1,330 @@
+<include file="Common@Public/head" />
+<link rel="stylesheet" type="text/css" href="{$publicurl}assets/global/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="{$publicurl}assets/global/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css"/>
+<include file="Common@Public/header" />
+<include file="Common@Public/titleAndBreadcrumb" />
+
+<div class="row">
+				<div class="col-md-12">
+					<!-- Begin: life time stats -->
+					<div class="portlet">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-list"></i>游戏项目管理【标签请用英文逗号“,”隔开】
+							</div>
+						</div>
+                        <div class="portlet-body form">
+                            <form id="dataForm"  class="form-horizontal">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <div class="col-md-2 text-right">
+                                        <button type="submit" class="btn btn-sm green"><i class="fa fa-check"></i> 确认添加</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="项目名称" name="name"  value="">
+                                        </div>
+                                        <div class="col-md-7">
+                                        <input type="text" class="form-control" placeholder="标签" name="tags"  value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+						<div class="portlet-body">
+							<div class="table-container">
+								<table class="table table-striped table-bordered table-hover" id="datatable_ajax">
+								<thead>
+								<tr role="row" class="heading">
+                                    <th>
+										 操作
+									</th>
+									<th width="5%">
+										 ID
+									</th>
+									<th>
+										 项目名称
+									</th>
+                                    <th>
+										 标签
+									</th>
+								</tr>
+								<tr role="row" class="filter">
+                                    <td>
+										<div class="margin-bottom-5">
+											<button class="btn btn-sm blue filter-submit margin-bottom"><i class="fa fa-search"></i> 搜索</button>
+										</div>
+									</td>
+									<td>
+									</td>
+									<td>
+										<input type="text" class="form-control form-filter input-sm" name="name">
+									</td>
+                                    <td>
+										<input type="text" class="form-control form-filter input-sm" name="tag">
+									</td>
+								</tr>
+								</thead>
+								<tbody>
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- End: life time stats -->
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+                 
+<!-- END CONTAINER -->
+<include file="Common@Public/footer" />
+<include file="Common@Public/foot" />
+<div id="ajax-modal" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+          <h4 class="modal-title">加载中，如无反应请关闭重试...</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn default">关闭</button>
+       </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="{$publicurl}assets/global/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="{$publicurl}assets/global/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="{$publicurl}theme/js/datatable.js"></script>
+<script type="text/javascript" src="{$publicurl}assets/global/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js"></script>
+<script type="text/javascript" src="{$publicurl}assets/global/jquery-validation/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{$publicurl}assets/global/jquery-validation/js/localization/messages_zh.min.js"></script>
+<script>
+var $modal = $('#ajax-modal');
+var admin_id="{$admin_info.admin_id}";
+var grid = new Datatable();
+function delData(id){
+	if (id>0){
+	var url="{:U('Service/Zsk/delGame')}?del_id="+id;
+	bootbox.setDefaults({locale: "zh_CN"});
+	bootbox.confirm('确认变更状态！', function(result) {
+	   if(result){
+	   ajaxBoxMsgDatatable(url,grid);
+	   }
+	});  
+	} else{
+		boxMsg(js_lang_no_select,js_lang_tipmsg_tit);  
+	} 
+}
+function sortMod(id,operate){
+	var url="{:U('Service/Zsk/sortModGame')}";
+	if(url!=''&&url!='undefined'&&url!=null&&operate!=''&&operate!='undefined'&&operate!=null){
+		$.ajax({
+			type: "POST", 
+			url: url, 
+			data: {json:1,id:id,operate:operate},  
+			dataType: 'json',
+			beforeSend:function(){
+				Metronic.blockUI({
+					message: '载入中...'
+				});
+			},
+			complete:function(){
+				Metronic.unblockUI();
+			},
+			success: function callBack(data){
+			if(data){
+				if(data.status=='success'){
+					grid.getDataTable().ajax.reload();
+				}else if(data.msg){
+				boxMsg(data.msg,js_lang_error);
+				}else{
+				boxMsg(js_lang_back_error,js_lang_error);
+				}
+				
+			}else{
+			boxMsg(js_lang_no_back,js_lang_error);
+			}	
+		},
+			error: function () {  
+			boxMsg(js_lang_ajax_error,js_lang_error);  
+			}    
+		});
+	}
+}
+      jQuery(document).ready(function() {
+         //Metronic.init(); // init metronic core components
+		 //Metronic.setAssetsPath(basepath+'public/assets/');
+         //Layout.init(); // init current layout
+		 $.fn.editable.defaults.inputclass = 'form-control'; 
+		 $.fn.editable.defaults.defaultValue = ''; 
+		 $.fn.editable.defaults.emptytext="还没有填写";
+		 $.fn.editable.defaults.ajaxOptions = {dataType: 'json'};
+		 grid.init({
+			dom:"<'row'<'col-md-8 col-sm-12'><'col-md-4 col-sm-12'<'table-group-actions pull-right'>>r><'table-scrollable't><'row'<'col-md-8 col-sm-12'><'col-md-4 col-sm-12'>>", 
+            src: $("#datatable_ajax"),
+			columns: [
+			    {"data": "sort_num", "orderable": false},
+                {"data": "id", "orderable": false},
+                {"data": "name", "orderable": false},
+                {"data": "tags", "orderable": false}
+            ],
+			columnDefs: [
+             {
+				 "targets": [0],
+				 "render": function ( data, type, full ) {
+					var sort_html="";
+					sort_html+="<a title=\"{$Think.lang.sort_first}\" href=\"javascript:sortMod('"+full.id+"','sort_first');\" class=\"btn btn-xs blue\"><i class=\"fa fa-angle-double-up\"></i></a>";
+					sort_html+="<a title=\"{$Think.lang.sort_forward}\" href=\"javascript:sortMod('"+full.id+"','sort_forward');\" class=\"btn btn-xs blue\"><i class=\"fa fa-angle-up\"></i></a>";
+					sort_html+="<a title=\"{$Think.lang.sort_backward}\" href=\"javascript:sortMod('"+full.id+"','sort_backward');\" class=\"btn btn-xs blue\"><i class=\"fa fa-angle-down\"></i></a>";
+					sort_html+="<a title=\"{$Think.lang.sort_end}\" href=\"javascript:sortMod('"+full.id+"','sort_end');\" class=\"btn btn-xs blue\"><i class=\"fa fa-angle-double-down\"></i></a>";
+					if(full.is_del==1){
+					sort_html+='<button onClick="javascript:delData('+full.id+');" class="btn btn-xs red"><i class="fa fa-times"></i>关闭中</button>';	
+					}else{
+					sort_html+='<button onClick="javascript:delData('+full.id+');" class="btn btn-xs green"><i class="fa fa-check"></i>开启中</button>';
+					}
+				    return sort_html;
+				 }
+			 },{
+				 "targets": [2],
+				 "render": function ( data, type, full ) {
+					 var url="{:U('Service/Zsk/editableGame?json=1')}";
+				     return '<a  href="javascript:void(0);" data-name="name" class="title editable editable-click editable-text" data-original-title="输入内容" data-pk="'+full.id+'" data-type="text"  data-url="'+url+'" >'+data+'</a>';
+				 }
+			 },{
+				 "targets": [3],
+				 "render": function ( data, type, full ) {
+					 var url="{:U('Service/Zsk/editableGame?json=1')}";
+				     return '<a  href="javascript:void(0);" data-name="tags" class="title editable editable-click editable-text" data-original-title="输入内容" data-pk="'+full.id+'" data-type="text"  data-url="'+url+'" >'+data+'</a>';
+				 }
+			 }
+			],
+            onSuccess: function (grid) {
+$('.editable-text').each(function(){
+	 $(this).editable({
+		success: function(data, newValue) {
+			 return editableBack(data); 
+		}
+	});
+});
+            },
+            dataTable: { // here you can define a typical datatable settings from http://datatables.net/usage/options 
+                "lengthMenu": [
+                    [10, 20, 100, 150, -1],
+                    [10, 20, 100, 150, "全部"] // change per page values here
+                ],
+                "pageLength": -1, // default record count per page
+                "ajax": {
+                    "url": "{:U('Service/Zsk/gameDataTable')}?json=1", // ajax source
+                },
+                "order": [
+                    [0, "asc"]
+                ] // set first column as a default sort by asc
+            }
+        });		
+var form1 = $('#dataForm');
+var error1 = $('.alert-danger', form1);
+var success1 = $('.alert-success', form1);
+form1.validate({
+  errorElement: 'span', //default input error message container
+  errorClass: 'help-block', // default input error message class
+  focusInvalid: false, // do not focus the last invalid input
+  ignore: "",
+  rules: {
+	  name: { 
+          minlength: 2, 
+		  required: true
+	  },
+	  tags: {
+		  required: true
+	  }
+  },  
+  messages: {  
+	  name: {  
+		  required: "项目名称不能为空！",  
+		  minlength: "项目名称最短为2个字符！"
+	  },
+	  varname: {
+		  required: "请填写标签！"
+	  }
+  },
+  submitHandler:function(form){
+	  var $form=$(form);
+	  var url="{:U('Service/Zsk/actAddGame')}";
+	  var name=$form.find("input[name='name']").val();
+	  var tags=$form.find("input[name='tags']").val();
+	  $.ajax({
+			type: "POST", 
+			url: url, 
+			data: {json:1,name:name,tags:tags},  
+			dataType: 'json',
+			beforeSend:function(){
+				Metronic.blockUI({
+					message: '载入中...'
+				});
+			}
+
+			,
+			complete:function(){
+				Metronic.unblockUI();
+			},
+			success: function callBack(data){
+			if(data){
+				if(data.msg){
+					if(data.msg_list){
+						var rowCount = data.msg_list.length;
+						if(rowCount>0){
+							var title=data.msg;
+							var msg_list='';
+							for (var i = 0; i < rowCount; i++) {
+							  msg_list+=data.msg_list[i].msg+"<br />";
+							}
+						}else{
+						var title=js_lang_tipmsg_tit;
+						var msg_list=data.msg;	
+						}
+					}else{
+						var title=js_lang_tipmsg_tit;
+						var msg_list=data.msg;
+					}
+				}
+				if(data.status=='success'){
+					 grid.getDataTable().ajax.reload();
+					 $form.find("input[name='name']").val('');
+					 $form.find("input[name='tags']").val('');
+				}else{
+				boxMsg(msg_list,title);
+			    }
+			}else{
+				boxMsg(js_lang_no_back,js_lang_error);
+			}	
+		},
+			error: function () {  
+			boxMsg(js_lang_ajax_error,js_lang_error);  
+			}    
+		});
+
+  },
+  invalidHandler: function (event, validator) {        
+	  success1.hide();
+	  error1.show();
+	  Metronic.scrollTo(error1, -200);
+  },
+  highlight: function (element) { 
+	  $(element)
+		  .closest('div').addClass('has-error').removeClass('has-success'); 
+  },
+  unhighlight: function (element) { 
+	  $(element)
+		  .closest('div').removeClass('has-error').addClass('has-success'); 
+  },
+  success: function (label) {
+	  label
+		  .closest('div').removeClass('has-error').addClass('has-success'); 
+  }
+});
+
+      });
+   </script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
