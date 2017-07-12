@@ -12,6 +12,7 @@
     }
     li{
         list-style: none;
+
     }
     header{
         height: 32px;
@@ -62,14 +63,19 @@
         padding:0 26px ;
         float: left;
         line-height: 41px;
-        color: #333333;
         font-size: 14px;
         margin-top: -1px;
+        cursor: pointer;
     }
-    .nav li:hover{
-        color: #FFFFFF;
-        background-color: #B3B6BB;
+    .nav li:first-child{
+        background-color: #9A9DA2;
+        font-weight: bolder;
+        color: #fff;
     }
+   /* .nav li:hover{
+        color: #FFFFFF !important;
+        background-color: #B3B6BB !important;
+    }*/
 
 </style>
 
@@ -86,7 +92,7 @@
     </div>
     <div class="detailContent">
         <ul class="nav">
-            <li>我的关注</li>
+            <li class="navLiActive">我的关注</li>
             <li>推荐</li>
             <li>导航</li>
             <li>视频</li>
