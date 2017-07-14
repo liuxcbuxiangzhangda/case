@@ -213,6 +213,12 @@ div p#large ul.list li  114
 > [http://blog.csdn.net/wxl1555/article/details/53037571](http://blog.csdn.net/wxl1555/article/details/53037571)
 ###原生js改变css样式###
 > [http://www.jb51.net/article/108550.htm](http://www.jb51.net/article/108550.htm)
-
+###form中的input可以设置为readonly和disable，请问2者有什么区别###
+> readonly不可编辑，但可以选择和复制；值可以传递到后台
+disabled不能编辑，不能复制，不能选择；值不可以传递到后台
+###消息提示框###
+> alert
+confirm
+prompt
 
 rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议
