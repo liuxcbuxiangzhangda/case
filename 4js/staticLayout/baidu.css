@@ -7,11 +7,21 @@ li{
     list-style: none;
 
 }
+html{
+    width: 100%;
+}
 header{
     width: 100%;
     border-top:1px solid #EBEBEB;
     border-bottom: 1px solid #EBEBEB;
-    overflow: auto;
+}
+header:after{
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
 }
 .headerLeft{
     float: left;
@@ -37,7 +47,7 @@ header{
     position: relative;
     margin-right: 94px;
 }
-.headerRight li{
+.headerRight>ul>li{
     float: left;
     padding: 0 11px;
 }
@@ -48,6 +58,50 @@ header{
     padding:7px 0px;
     font-weight: bold;
     color: #555;
+}
+.header-right-name{
+    position: relative;
+
+}
+.name-detail{
+    position: absolute;
+    top:31px;
+    width: 68px;
+    border: 1px solid #E3E3E3;
+    z-index: 2000;
+    left: -3px;
+    box-shadow:1px 0px 1px #E3E3E3 ;
+
+}
+
+.name-detail:before{
+    content: "";
+    border: 5px dashed transparent;
+    border-bottom: 5px solid  #E3E3E3;
+    position: absolute;
+    top:-10px;
+    left: 29px;
+}
+.name-detail:after{
+    content: " ";
+    border: 3px dashed transparent;
+    border-bottom: 3px solid #fff;
+    position: absolute;
+    top:-6px;
+    left: 31px;
+}
+.name-detail li a{
+    display: block;
+    padding: 6px 8px;
+    font-size:12px;
+    text-decoration-line: none;
+    font-weight: normal;
+
+}
+.name-detail li a:hover{
+    background-color: #3388FF;
+    color: #fff;
+
 }
 #header-right-more{
     position: absolute;

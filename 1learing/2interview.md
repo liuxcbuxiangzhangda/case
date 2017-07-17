@@ -221,4 +221,7 @@ disabled不能编辑，不能复制，不能选择；值不可以传递到后台
 confirm
 prompt
 
+###alt和title的区别###
+###伪元素before和after###
+
 rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议
