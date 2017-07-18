@@ -59,11 +59,13 @@ header:after{
     font-weight: bold;
     color: #555;
 }
-.header-right-name{
+.header-right-li{
     position: relative;
-
 }
-.name-detail{
+.header-right-li:hover .header-right-li-detail{
+    display: block;
+}
+.header-right-li-detail{
     position: absolute;
     top:31px;
     width: 68px;
@@ -71,10 +73,11 @@ header:after{
     z-index: 2000;
     left: -3px;
     box-shadow:1px 0px 1px #E3E3E3 ;
+    display: none;
 
 }
 
-.name-detail:before{
+.header-right-li-detail:before{
     content: "";
     border: 5px dashed transparent;
     border-bottom: 5px solid  #E3E3E3;
@@ -82,7 +85,7 @@ header:after{
     top:-10px;
     left: 29px;
 }
-.name-detail:after{
+.header-right-li-detail:after{
     content: " ";
     border: 3px dashed transparent;
     border-bottom: 3px solid #fff;
@@ -90,7 +93,7 @@ header:after{
     top:-6px;
     left: 31px;
 }
-.name-detail li a{
+.header-right-li-detail li a{
     display: block;
     padding: 6px 8px;
     font-size:12px;
@@ -98,7 +101,7 @@ header:after{
     font-weight: normal;
 
 }
-.name-detail li a:hover{
+.header-right-li-detail li a:hover{
     background-color: #3388FF;
     color: #fff;
 
@@ -112,6 +115,9 @@ header:after{
     background-color: #398BFB;
     color: #fff;
     text-decoration-line: none;
+}
+.header-more-detail{
+
 }
 .skin{
     text-decoration-line: underline;
