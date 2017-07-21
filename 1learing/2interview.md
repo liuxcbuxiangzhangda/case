@@ -223,5 +223,8 @@ prompt
 
 ###alt和title的区别###
 ###伪元素before和after###
-
+###几种布局方式###
+> 弹性布局
+> [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+> [http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092](http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092)
 rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议

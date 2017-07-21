@@ -33,6 +33,7 @@ h. 同一级别的后写的会覆盖先写的
 > [http://www.uml.org.cn/html/201207311.asp](http://www.uml.org.cn/html/201207311.asp)
 > 
 >rem： [http://www.w3cplus.com/css3/define-font-size-with-css3-rem](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
+6.pointer-events   穿透
 
 
 
