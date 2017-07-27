@@ -296,3 +296,125 @@ prompt
 ######
 
 rootscope的理解，，ng_if和ng_show,ng-hidden的区别，angular作用域（父子），this的理解，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议,1、盒子模型的几个部分，box-sizing的几个值，分别有什么不同 2、清楚浮动的几种方式 3、div垂直居中的几种方式 4、html5的新特性，删除了哪些元素，新增的元素，html5的兼容性处理 5、js题，考全局变量和局部变量，基本类型和引用类型 6、css3的新特性和兼容性处理 7、冒泡和阻止冒泡 8、angularjs和jQuery不混用，angularjs里面建议了的 9、js事件监听，jQuery的普通绑定和on事件委托，10、jsonp 11，匿名函数使用场景 11，echart和highchart，d3，svg，less 12、ionic.js框架
+
+1、 JavaScript包括哪些数据类型？
+
+
+2、<img>元素的alt和title有什么异同？
+
+
+3、border-color-left、marin-left、-moz-viewport改写成JavaScript格式
+
+
+4、 编写一个JavaScript函数，实时显示当前时间，格式“年-月-日 时:分:秒”
+
+
+5、
+	E~E
+	E E
+	E>E
+	E+E
+	.className .className
+	.className.className
+
+6、
+span{Ann}，加上padding 10px，background yellow，有什么效果，为什么
+<span>Ann</span>
+
+
+
+7、
+display: none;与visibility: hidden;的区别
+
+
+
+
+8、
+容器包含若干浮动元素时如何清理(包含)浮动
+
+
+9、localStorage,cookie区别
+
+
+
+
+10、下面代码运行结果是什么？
+function printing() {
+   console.log(1);
+   setTimeout(function() { console.log(2); }, 1000);
+   setTimeout(function() { console.log(3); }, 0);
+   console.log(4);
+}
+printing();
+
+1，4, 3, 2
+
+
+
+
+setTimeout
+
+setInterval(, );
+
+
+this
+call , apply
+
+this.show.call(this);
+
+
+
+var Render ={
+	show:function(){
+		console.log(this);
+	}
+}
+
+Render.show.call(this);
+
+
+11、
+var nodes = document.getElementsByTagName('button');
+for (var i = 0; i < nodes.length; i++) {
+   nodes[i].addEventListener('click', (function(i) {
+      return function() {
+         console.log('You clicked element #' + i);
+      }
+   })(i));
+}
+
+
+4444
+
+12、列举至少5种前端性能优化的具体方法，简要说明理由。(
+1. jbox
+2. 多列式布局 弹性盒子布局 、position float布局
+3. 所有弹出框 jbox（jquery的插件） $.alert()等 待补充
+4. 选择器：css选择器 jquery选择器
+5. 清楚浮动 只能对浮动起作用 不能对绝对定位起作用
+6. 编译完成 自动启动浏览器 project里面webpack.config配置文件
+7. angularjs组件之间的通信
+8. fileinput[http://plugins.krajee.com/](http://plugins.krajee.com/)
+9. static/19361717320137163574744/)
+11. underscore.js和handlebar.js 两个js库
+12. $.each()和$(selector).each()[http://www.jb51.net/article/62154.htm](http://www.jb51.net/article/62154.htm)
+13. 下载亚马逊的电子书阅读器 kindle
+14. argument
+15. call（） apply（）
+16. js中new操作符
+17. constructor prototype argument
+18. angularjs清楚缓存
+19.  $scope.removeLocalStorage=function(){
+            window.localStorage.removeItem("sysResourceId");
+            $state.go("index.content.sys/resource/sysResource");
+        } 
+1. queryselector（）queryselectorall（）
+2. href“javascript：function（）”
+3. jquery方法：end()
+4. dataTable() ajax()
+5. http跨域请求 
+6. ajax中的跨域请求 异步请求
+7. 前端调试
+8. 构建工具
+9. 模块化编程
+10. js：堆和栈 string new string
