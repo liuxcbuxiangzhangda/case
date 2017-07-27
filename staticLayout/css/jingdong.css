@@ -255,6 +255,7 @@ header:after{
     left: 190px;
     padding: 21px;
     display: none;
+    z-index: 2000;
 }
 .menu-items:hover .menu-detail{
     display: block;
@@ -350,6 +351,9 @@ header:after{
     background-color: #fff;
     margin-left: 5px;
 }
+.js-slider-circle span:first-child{
+    background-color: #DB192A;
+}
 .js-slider-turn{
     width: 30px;
     height: 60px;
@@ -361,13 +365,139 @@ header:after{
     line-height: 60px;
     text-align: center;
     font-size: 20px;
+    display: none;
+}
+.js-slider:hover .js-slider-turn{
+    display: block;
 }
 .js-slider-turn:hover{
     background: rgba(0,0,0,0.5);
 }
-.us{
-    height: 500px;
+.guide{
     width: 190px;
-    background-color: #0A021A;
+    background-color: #fff;
+}
+/*.guide:after{
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}*/
+.guide_user{
+    padding: 15px;
+}
+.guide_user:after{
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.guider_user_pic{
+    float: left;
+    height: 50px;
+    width: 50px;
+    position: relative;
+
+}
+.guider_user_pic img{
+    width: 40px;
+    height: auto;
+    margin: 5px;
+
+}
+.guider_user_pic a{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: url("../images/sprite_userinfo@1x.png") -70px 0 no-repeat;
+}
+.guide_user_come{
+    width: 95px;
+    height: 50px;
+    float: right;
+}
+.guide_user_come span{
+    display: inline-block;
+    width: 100%;
+   font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.guide_user_come a{
+    font-size: 12px;
+    color: #666;
+}
+.guide_user_come a:hover{
+    color: #C81623;
+}
+.guide_user_more a{
+    margin-top: 13px;
+    display: inline-block;
+    border: 2px solid #E01222;
+    padding: 2px 10px;
+    color: #E01222;
+    font-size: 12px;
+}
+.guide_user_more a:hover{
+    background-color: #E01222;
+    color: #fff;
+}
+.guide_news{
+    padding: 0 15px;
+    border-top:1px solid #E6E6E6 ;
+}
+.guide_news_title{
+    color: #333;
+    font-size: 12px;
+    padding: 7px 0 3px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.guide_news_title span{
+    padding-right:26px;
+}
+.guide_news_title a{
+    color: #333;
+    font-size: 12px;
+    float: right;
+}
+.guide_news_title a:hover{
+    color: #C81623;
+}
+.guide_news_content{
+    display: none;
+    padding: 10px 0;
+}
+.guide_news_content li{
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1.5px 0;
+}
+.guide_news_content li a{
+    font-size: 12px;
+    color: #666;
+}
+.guide_news_content li a:hover{
+    color: #C81623;
+}
+.guide_service{
+    display: flex;
+    flex-flow: row wrap;
+}
+.guide_service_item{
+    width: 25%;
+    height: 69px;
+    box-sizing: border-box;
+    border: 1px solid red;
 
 }

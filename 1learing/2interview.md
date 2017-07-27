@@ -1,3 +1,45 @@
+##前端重点##
+css和js基础
+
+一、主要的布局（固定布局，流式布局，自适应布局，响应式布局）
+
+二、闭包，递归
+> 闭包
+> > [http://mp.weixin.qq.com/s/lT8uOaCvkVqcPgYlfwQ7PQ](http://mp.weixin.qq.com/s/lT8uOaCvkVqcPgYlfwQ7PQ)
+> [http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
+> [http://www.cnblogs.com/qieguo/p/5457040.html](http://www.cnblogs.com/qieguo/p/5457040.html)
+
+三、模块化开发
+
+四、自动化构建工具
+
+五、流行的框架
+
+六、ajax数据请求，应用场景，异步和同步
+
+七、less的便利用法
+
+八、兼容性
+
+九、跨域
+
+十、动画效果（css3的过度，动画，2D3D转换）
+
+十一、前端代码优化
+> js方面：
+> >多封装函数，少循环，要循环的话选择循环次数少的，异步请求
+
+> css方面：
+> >多写共性类，该简写的简写
+
+> html方面：
+> >动态加载：当有很多图片等，而且不是一次性显示，可以动态请求加载
+
+
+
+
+
+
 ###1、<img>元素的alt和title有什么异同###
 
 
@@ -224,12 +266,33 @@ prompt
 ###alt和title的区别###
 ###伪元素before和after###
 ###几种布局方式###
+####固定布局，，弹性布局，流式布局，响应式布局（rem和em），自适应布局（rem和em）####
 > 弹性布局
 > [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 > [http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092](http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092)
-
+> 响应式布局[http://blog.csdn.net/gertyy/article/details/52764527](http://blog.csdn.net/gertyy/article/details/52764527)
+> 自适应布局[http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html](http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html)
 ###title上有图标###
 > [https://zh.wikipedia.org/wiki/Favicon](https://zh.wikipedia.org/wiki/Favicon)
 
 ###用rgba设置背景透明，避免文字透明###
-rootscope的理解，闭包的理解，ng_if和ng_show的区别，angular作用域（父子），深拷贝和浅拷贝，this的理解，异步请求优点和缺点，，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议
+###a标签的target属性###
+###图片在固定大小的div里不失真，宽或者高固定，高或者宽自动###
+###text-overflow与overflow，white-space要同时用，多余的字变为省略号###
+###JavaScript的数据类型###
+> number string booleans null undefined object(函数是属于object) array
+
+> typeof的类型number string booleans undefined function object(typeof(null),数组，也返回object) 
+###堆和栈###
+> [https://baike.baidu.com/item/%E5%A0%86%E6%A0%88/1682032?fr=aladdin](https://baike.baidu.com/item/%E5%A0%86%E6%A0%88/1682032?fr=aladdin)
+###基本类型和引用类型###
+> 基本类型按值访问（string，number，booleans），引用类型的值按引用访问（object，array，function）；
+###深拷贝和浅拷贝###
+> 深拷贝：拷贝的值，会在堆内存中申请地址来存值，两个的值发生了改变不会相互影响，所有的基本类型赋值都是深拷贝
+> 浅拷贝：拷贝地址，当一个值发生变化另一个值也会发生变华
+> 引用类型赋值就会分深拷贝和浅拷贝
+###申明全局变量的三种方式###
+> 函数外申明，函数内但是不用var，Window.name=值
+######
+
+rootscope的理解，，ng_if和ng_show,ng-hidden的区别，angular作用域（父子），this的理解，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议,1、盒子模型的几个部分，box-sizing的几个值，分别有什么不同 2、清楚浮动的几种方式 3、div垂直居中的几种方式 4、html5的新特性，删除了哪些元素，新增的元素，html5的兼容性处理 5、js题，考全局变量和局部变量，基本类型和引用类型 6、css3的新特性和兼容性处理 7、冒泡和阻止冒泡 8、angularjs和jQuery不混用，angularjs里面建议了的 9、js事件监听，jQuery的普通绑定和on事件委托，10、jsonp 11，匿名函数使用场景 11，echart和highchart，d3，svg，less 12、ionic.js框架

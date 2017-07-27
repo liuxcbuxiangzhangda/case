@@ -5,6 +5,9 @@
 2、移动端H5开发
 > [http://sc.chinaz.com/info/130410113358.htm](http://sc.chinaz.com/info/130410113358.htm)
 
+
+3.native app与web app的区别
+> [https://zhidao.baidu.com/question/2011284433940922508.html](https://zhidao.baidu.com/question/2011284433940922508.html)
 ###case###
 1、H5手势解锁
 > [https://github.com/songjinzhong/H5HandLock](https://github.com/songjinzhong/H5HandLock)
