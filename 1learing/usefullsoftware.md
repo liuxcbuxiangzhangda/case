@@ -9,3 +9,5 @@ markdownpad是Windows下的一个多功能Markdown（标记性语言）编辑器
 ##FSC##
 ##Photoshop##
 ##翻墙##
+##kindle##
+看书软件
