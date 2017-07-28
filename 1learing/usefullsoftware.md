@@ -14,3 +14,4 @@ markdownpad是Windows下的一个多功能Markdown（标记性语言）编辑器
 ##svn##
 ##yarn##
 ##node##
+##FTP工具##
