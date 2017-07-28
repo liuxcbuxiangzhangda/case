@@ -1,23 +1,14 @@
-##学习指南W3C##
-###格式化###
-[http://www.w3school.com.cn/html/index.asp](http://www.w3school.com.cn/html/index.asp)
-##HTML参考手册##
-[http://www.w3school.com.cn/tags/index.asp](http://www.w3school.com.cn/tags/index.asp)
-
-##知识积累##
-###1、兼容性判断###
-[https://github.com/liuxcbuxiangzhangda/2my-html/blob/master/Compatibility.html](https://github.com/liuxcbuxiangzhangda/2my-html/blob/master/Compatibility.html)
-
-
-
-#attr：常用属性#
-
-
-
-
 
 #知识积累#
-1、css大小写不敏感的
+less写法规则
+> [http://www.1024i.com/demo/less/](http://www.1024i.com/demo/less/)
+
+> [http://lesscss.cn/](http://lesscss.cn/)
+
+> [http://www.cnblogs.com/starof/p/5226739.html](http://www.cnblogs.com/starof/p/5226739.html)
+
+1、css命名规则
+> [https://www.douban.com/note/499976405/?type=like](https://www.douban.com/note/499976405/?type=like)
 
 2、css选择器的优先级
 >
@@ -41,11 +32,17 @@ h. 同一级别的后写的会覆盖先写的
 > [http://www.uml.org.cn/html/201207311.asp](http://www.uml.org.cn/html/201207311.asp)
 > 
 >rem： [http://www.w3cplus.com/css3/define-font-size-with-css3-rem](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
-6.pointer-events   穿透
-
-
 
 > 自适应：[http://mp.weixin.qq.com/s/vLuc3CIX_bx0HPLo9wZReA](http://mp.weixin.qq.com/s/vLuc3CIX_bx0HPLo9wZReA)
+
+6.pointer-events   穿透
+
+7.兼容性判断
+[https://github.com/liuxcbuxiangzhangda/2my-html/blob/master/Compatibility.html](https://github.com/liuxcbuxiangzhangda/2my-html/blob/master/Compatibility.html)
+
+
+
+
 
 #案例#
 ###1、footer定位###
