@@ -40,8 +40,11 @@ h. 同一级别的后写的会覆盖先写的
 7.兼容性判断
 [https://github.com/liuxcbuxiangzhangda/2my-html/blob/master/Compatibility.html](https://github.com/liuxcbuxiangzhangda/2my-html/blob/master/Compatibility.html)
 
-
-
+8.图片和文字在同一行高度显示
+> [http://www.cnblogs.com/yisheng/archive/2012/12/18/2823089.html](http://www.cnblogs.com/yisheng/archive/2012/12/18/2823089.html)
+> 
+    <a>文字<span></span></a>
+  span是背景图片，将span设置`vertical-align:middle`
 
 
 #案例#
