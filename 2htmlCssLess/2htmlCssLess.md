@@ -7,6 +7,8 @@ less写法规则
 
 > [http://www.cnblogs.com/starof/p/5226739.html](http://www.cnblogs.com/starof/p/5226739.html)
 
+> [http://www.cnblogs.com/grey-zhou/p/5796496.html](http://www.cnblogs.com/grey-zhou/p/5796496.html)
+
 1、css命名规则
 > [https://www.douban.com/note/499976405/?type=like](https://www.douban.com/note/499976405/?type=like)
 
@@ -45,7 +47,20 @@ h. 同一级别的后写的会覆盖先写的
 > 
     <a>文字<span></span></a>
   span是背景图片，将span设置`vertical-align:middle`
+ 
+9.word-break和word-warp
 
+10.text-decoration
+
+11.自定义设置font-family
+
+     @font-face {
+      font-family: "fzzhengheis-el-gbregular";
+      src: url("字体文字的地址");
+      font-weight: normal;
+      font-style: normal;
+    }
+    .xx{font-family:fzzhengheis-el-gbregular}
 
 #案例#
 ###1、footer定位###
