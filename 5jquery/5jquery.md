@@ -10,3 +10,6 @@
 
 2、点击tr实现选择checkbox功能，点击checkobx的时候阻止冒泡事件
 [http://blog.csdn.net/dong281055686xin/article/details/48469945](http://blog.csdn.net/dong281055686xin/article/details/48469945)
+
+3.index()
+> [http://www.jb51.net/article/46769.htm](http://www.jb51.net/article/46769.htm)
