@@ -51,6 +51,7 @@ h. 同一级别的后写的会覆盖先写的
 9.word-break、word-wrap、white-space
 > [http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html](http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html)
 > [http://jingyan.baidu.com/article/e75aca855b1500142edac6d0.html](http://jingyan.baidu.com/article/e75aca855b1500142edac6d0.html)
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/2htmlCssLess/word-warp.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/2htmlCssLess/word-warp.html)
 
 10.text-decoration
 
