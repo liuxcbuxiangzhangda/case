@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>word-wrap,word-break,white-space</title>
+</head>
+<body>
+<style>
+    div{
+        width: 120px;
+        border: 1px solid red;
+    }
+    .warp{
+        word-wrap: break-word; /*normal*/
+    }
+    .wordBreak{
+        word-break: break-all;
+
+    }
+    .both{
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+</style>
+<div class="warp">
+    内容将在边界内换行，仅用于块对象，内联对象要用的话，必须要设定height、width或display:block或position:absolute。
+</div>
+<div class="wordBreak">
+    内容将在边界内换行，仅用于块对象，内联对象要用的话，必须要设定height、width或display:block或position:absolute。
+</div>
+<div class="both">
+    内容将在边界内换行，仅用于块对象，内联对象要用的话，必须要设定height、width或display:block或position:absolute。
+</div>
+
+</body>
+</html>

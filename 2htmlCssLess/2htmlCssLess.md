@@ -48,7 +48,9 @@ h. 同一级别的后写的会覆盖先写的
     <a>文字<span></span></a>
   span是背景图片，将span设置`vertical-align:middle`
  
-9.word-break和word-warp
+9.word-break、word-wrap、white-space
+> [http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html](http://www.cnblogs.com/2050/archive/2012/08/10/2632256.html)
+> [http://jingyan.baidu.com/article/e75aca855b1500142edac6d0.html](http://jingyan.baidu.com/article/e75aca855b1500142edac6d0.html)
 
 10.text-decoration
 
@@ -62,6 +64,11 @@ h. 同一级别的后写的会覆盖先写的
     }
     .xx{font-family:fzzhengheis-el-gbregular}
 
+12.超出部分省略号
+
+     overflow:hidden;
+     white-space:nowrap;
+     text-overflow:ellipsis
 #案例#
 ###1、footer定位###
 [https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/footer's%20position.html](https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/footer's%20position.html)
