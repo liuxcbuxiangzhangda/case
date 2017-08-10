@@ -3,23 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
+<div id="root">
+
+</div>
 
 </body>
+<script src="public/bundle.js"></script>
 </html>
-<script>
-    import React, { Component } from 'react';
-    import { AppRegistry, Text } from 'react-native';
-
-    class HelloWorldApp extends Component {
-        render() {
-            return (
-                    <Text>Hello world!</Text>
-        );
-        }
-    }
-
-    // 注意，这里用引号括起来的'HelloWorldApp'必须和你init创建的项目名一致
-    AppRegistry.registerComponent('demo', () => HelloWorldApp);
-</script>

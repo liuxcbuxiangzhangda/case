@@ -28,6 +28,9 @@ js框架： node angularjs react
 > [http://blog.csdn.net/foruok/article/details/48231175](http://blog.csdn.net/foruok/article/details/48231175)
 
 前端构建工具：
+
+前端模块管理器之间的优缺点（require，Bower，Browserify，Component和Duo）
+> [http://www.ruanyifeng.com/blog/2014/09/package-management.html](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 > grunt,gulp,webpack,bower几者之间的区别和联系
 > 
 > [http://blog.csdn.net/xllily_11/article/details/51782005](http://blog.csdn.net/xllily_11/article/details/51782005)
