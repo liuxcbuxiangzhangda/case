@@ -1,4 +1,34 @@
 
+###DiredFood###
+1、table选择一列就选择整行
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/checkonetr.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/checkonetr.html)
+
+2、时间对象手册gettime（），getday（）等
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/date.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/date.html)
+
+3、模板引擎
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/handlebar.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/handlebar.html)
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/underscore-template.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/underscore-template.html)
+
+4、模态框
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/model.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/model.html)
+
+5、分割字符串，截取字符串
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/split.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/split.html)
+
+6、可编辑的table
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/textTable.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/textTable.html)
+
+7、screenX,clientX,pageX,offsetX,pageXoffset的区别
+> [http://www.cnblogs.com/shubiao/p/4954848.html](http://www.cnblogs.com/shubiao/p/4954848.html)
+
+8、函数的arguments属性
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/arguments.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/arguments.html)
+
+9、原生js实现路由
+> [http://blog.csdn.net/sunxinty/article/details/52586556](http://blog.csdn.net/sunxinty/article/details/52586556)
+
+10、
 ###js参考手册###
 [http://www.w3school.com.cn/jsref/index.asp](http://www.w3school.com.cn/jsref/index.asp)
 
@@ -72,36 +102,5 @@ filter（）它 利用 指定 的 函数 确定 是否 在 返回 的 数组 中
 reduce（）和reduceRight（）
 
 20、
-
-
-###DiredFood###
-1、table选择一列就选择整行
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/checkonetr.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/checkonetr.html)
-
-2、时间对象手册gettime（），getday（）等
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/date.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/date.html)
-
-3、模板引擎
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/handlebar.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/handlebar.html)
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/underscore-template.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/underscore-template.html)
-
-4、模态框
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/model.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/model.html)
-
-5、分割字符串，截取字符串
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/split.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/split.html)
-
-6、可编辑的table
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/textTable.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/textTable.html)
-
-7、screenX,clientX,pageX,offsetX,pageXoffset的区别
-> [http://www.cnblogs.com/shubiao/p/4954848.html](http://www.cnblogs.com/shubiao/p/4954848.html)
-
-8、函数的arguments属性
-> [https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/arguments.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/4js/arguments.html)
-
-9、原生js实现路由
-> [http://blog.csdn.net/sunxinty/article/details/52586556](http://blog.csdn.net/sunxinty/article/details/52586556)
-
 
 

@@ -15,3 +15,4 @@ markdownpad是Windows下的一个多功能Markdown（标记性语言）编辑器
 ##yarn##
 ##node##
 ##FTP工具##
+##python##

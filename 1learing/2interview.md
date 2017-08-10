@@ -1,7 +1,15 @@
 ##前端重点##
 css和js基础
 
-一、主要的布局（固定布局，流式布局，自适应布局，响应式布局）
+一、主要的布局：固定布局，弹性布局，流式布局，响应式布局（rem和em），自适应布局（rem和em）
+> 弹性布局
+> [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+> [http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092](http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092)
+> 
+> 响应式布局[http://blog.csdn.net/gertyy/article/details/52764527](http://blog.csdn.net/gertyy/article/details/52764527)
+> 
+> 自适应布局[http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html](http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html)
+
 
 二、闭包，递归
 > 闭包
@@ -18,6 +26,14 @@ css和js基础
 六、ajax数据请求，应用场景，异步和同步
 
 七、less的便利用法
+> [http://www.1024i.com/demo/less/](http://www.1024i.com/demo/less/)
+
+> [http://lesscss.cn/](http://lesscss.cn/)
+
+> [http://www.cnblogs.com/starof/p/5226739.html](http://www.cnblogs.com/starof/p/5226739.html)
+
+> [http://www.cnblogs.com/grey-zhou/p/5796496.html](http://www.cnblogs.com/grey-zhou/p/5796496.html)
+
 
 八、兼容性
 
@@ -26,6 +42,8 @@ css和js基础
 十、动画效果（css3的过度，动画，2D3D转换）
 
 十一、前端代码优化
+
+十二、css命名规则
 > js方面：
 > >多封装函数，少循环，要循环的话选择循环次数少的，异步请求
 
@@ -37,16 +55,6 @@ css和js基础
 
 十二.前后端分离具体是什么
 
-
-
-
-###1、<img>元素的alt和title有什么异同###
-
-
-> img标签的alt属性是在图片因浏览器兼容、加载失败或地址出错等原因而不显示时为浏览用户所做的代替语言，其性质为该图片的代替;
-
-> img标签的title属性，是表达该图片的一些额外信息，其性质为一种备注或者注释，鼠标过去时显示该段文字，有hover的效果，它可以用在除了base，basefont，head，html，meta，param，script和title之外的所有标签。例如a标签
-> 
 ###2、匿名函数使用场景###
 一个函数之所以要有名字，是为了可以在后续重复使用。但是，如果一个函数只用一次，那么就没有必要给它名字了。并且，多一个名字就会多声明一个无用的变量，对命名空间造成不必要的浪费。简洁，一向是编程的一个重要原则
 如
@@ -265,15 +273,7 @@ prompt
 
 ###alt和title的区别###
 ###伪元素before和after###
-###几种布局方式###
-####固定布局，，弹性布局，流式布局，响应式布局（rem和em），自适应布局（rem和em）####
-> 弹性布局
-> [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
-> [http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092](http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092)
-> 响应式布局[http://blog.csdn.net/gertyy/article/details/52764527](http://blog.csdn.net/gertyy/article/details/52764527)
-> 自适应布局[http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html](http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html)
-###title上有图标###
-> [https://zh.wikipedia.org/wiki/Favicon](https://zh.wikipedia.org/wiki/Favicon)
+
 
 ###用rgba设置背景透明，避免文字透明###
 ###a标签的target属性###
