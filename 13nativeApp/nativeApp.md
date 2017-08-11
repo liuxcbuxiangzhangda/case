@@ -1,7 +1,6 @@
 官方地址：
 
-
-> [http://reactnative.cn/docs/0.47/getting-started.html](http://reactnative.cn/docs/0.47/getting-started.html)
+> 中文：[http://reactnative.cn/](http://reactnative.cn/)
 
 简单项目的流程：下载node和python，设置npm镜像源，安装yarn，设置yarn镜像源，初始化项目（yarn init），安装webpack（yarn add webpack），写webpack的配置文件(参照webpack的学习内容)， 
 

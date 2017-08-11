@@ -54,6 +54,9 @@ webpack配置文件：
 >[http://www.jianshu.com/p/cd123afa196a](http://www.jianshu.com/p/cd123afa196a)
 >[http://www.cnblogs.com/QxQstar/p/5961387.html](http://www.cnblogs.com/QxQstar/p/5961387.html)
 
+github
+> [https://github.com/liuxcbuxiangzhangda/webpack](https://github.com/liuxcbuxiangzhangda/webpack)
+
 
 
 webpack-dev-server打包速度加快和实现热替换

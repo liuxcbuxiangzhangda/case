@@ -70,9 +70,9 @@
 /**
  * Created by Administrator on 2017/8/10.
  */
-var greeter = __webpack_require__(1);
-document.getElementById('root').appendChild(greeter());
-
+var hello = __webpack_require__(1);
+var name = __webpack_require__(2);
+var indexCss = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \".../css/index.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 /***/ }),
 /* 1 */
@@ -81,12 +81,20 @@ document.getElementById('root').appendChild(greeter());
 /**
  * Created by Administrator on 2017/8/10.
  */
-module.exports = function() {
-    let greet = document.createElement('div');
-    greet.textContent = "xxx ";
-    return greet;
-};
+(function hhh() {
+  console.log("hello");
+})();
 
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Administrator on 2017/8/11.
+ */
+(function kkk() {
+  console.log("liu");
+})();
 
 /***/ })
 /******/ ]);
