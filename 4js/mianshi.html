@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+<div id="mm">
+    <a href="#">a</a>
+    <a href="#">b</a>
+    <a href="#">c</a>
+    <a href="#">d</a>
+</div>
+</body>
+<script>
+   var ff=function (can) {
+       for(var i=0;i<can.length;++i){
+           can[i].s=i;
+           can[i].onclick=function () {
+               alert((this.s+1)*100);
+           }
+       }
+   }
+   ff($("#mm a"))
+</script>
+</html>

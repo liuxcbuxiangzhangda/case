@@ -293,8 +293,41 @@ prompt
 > 引用类型赋值就会分深拷贝和浅拷贝
 ###申明全局变量的三种方式###
 > 函数外申明，函数内但是不用var，Window.name=值
-######
+###变量名规则###
+> 变量必须以字母开头
+> 
+> 变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）
+> 
+> 变量名称对大小写敏感（y 和 Y 是不同的变量）
+###H5web储存###
+> localStorage - 没有时间限制的数据存储
+> 
+> sessionStorage - 针对一个 session 的数据存储
 
+###js类的继承###
+> [https://zhidao.baidu.com/question/712318250451114165.html?fr=iks&word=js%C0%E0%B5%C4%BC%CC%B3%D0&ie=gbk](https://zhidao.baidu.com/question/712318250451114165.html?fr=iks&word=js%C0%E0%B5%C4%BC%CC%B3%D0&ie=gbk)
+
+###call和apply区别###
+> [https://zhidao.baidu.com/question/623761227407632684.html?loc_ans=1523839858](https://zhidao.baidu.com/question/623761227407632684.html?loc_ans=1523839858)
+
+###js中eval###
+    var globalEval = eval;     //定义全局eval函数别名
+    var a ='global', b = 'global';    //全局变量
+    function c()
+    {
+     var a = 'local';      //局部变量
+     eval('a+="changed"');  //直接更改局部变量的值
+     return a;      //返回更改后的局部变量
+    }
+    function d()
+     {
+      var b = 'local';
+      globalEval("b+='changed'");
+      return b;
+    } 
+    
+    console.log(c(), a);   //localchanged global                  
+    console.log(d() , b)   //local    globalchanged                                     
 rootscope的理解，，ng_if和ng_show,ng-hidden的区别，angular作用域（父子），this的理解，angular几个重要部分，跨域实现的几种方式，http的组成，js创建对象的几种方式，http协议,1、盒子模型的几个部分，box-sizing的几个值，分别有什么不同 2、清楚浮动的几种方式 3、div垂直居中的几种方式 4、html5的新特性，删除了哪些元素，新增的元素，html5的兼容性处理 5、js题，考全局变量和局部变量，基本类型和引用类型 6、css3的新特性和兼容性处理 7、冒泡和阻止冒泡 8、angularjs和jQuery不混用，angularjs里面建议了的 9、js事件监听，jQuery的普通绑定和on事件委托，10、jsonp 11，匿名函数使用场景 11，echart和highchart，d3，svg，less 12、ionic.js框架
 
 1、 JavaScript包括哪些数据类型？
