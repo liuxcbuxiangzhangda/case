@@ -4,3 +4,5 @@ ES6
 >阮一峰：[http://es6.ruanyifeng.com/](http://es6.ruanyifeng.com/)
 
 变量：let const与var的区别
+
+函数：可以为参数指定默认值，
