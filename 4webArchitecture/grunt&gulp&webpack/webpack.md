@@ -49,7 +49,8 @@ loader从右至左，从下至上执行
 > 
 > less-loader：编译less成css
 
-
+代理服务器：配置devServer
+> 把本地的代码放在服务器上访问
 
 入门webpack（通过配置文件使用webpack）： 
 >webpack3中文版：[http://www.cnblogs.com/afrog/p/7130561.html](http://www.cnblogs.com/afrog/p/7130561.html)
