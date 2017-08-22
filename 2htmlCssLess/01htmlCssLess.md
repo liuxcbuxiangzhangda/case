@@ -74,4 +74,8 @@ h. 同一级别的后写的会覆盖先写的
 15.title上有图标
 > [https://zh.wikipedia.org/wiki/Favicon](https://zh.wikipedia.org/wiki/Favicon)
 
+16.字符实体
+
+17.清除浮动的五种方式
  
+18.识别不同的浏览器兼容：Modernizr；hack

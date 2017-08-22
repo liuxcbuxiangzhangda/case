@@ -92,7 +92,7 @@
 
 16、参考手册（菜鸟教程、W3C等）
 
-
+rootscope的理解，，ng_if和ng_show,ng-hidden的区别，angular作用域（父子），angular几个重要部分，
 
 ##案例##
 

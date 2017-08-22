@@ -1,5 +1,6 @@
 ###简单项目的流程：###
-下载node和python，设置npm镜像源，安装yarn，设置yarn镜像源，初始化项目（yarn init)生成packjson.js文件，安装webpack（yarn add webpack），packjson.js中修改scripts中的start值，在写webpack的配置文件(参照webpack的学习内容)，
+下载node和python，设置npm镜像源，安装yarn，设置yarn镜像源，初始化项目（yarn init)生成packjson.js文件，安装webpack（yarn add webpack），packjson.js中修改scripts中的start值，在写webpack的配置文件(参照webpack的学习内容)，本地安装建立node_modules文件夹（npm全局安装和非全局安装的区别是）
+
 
 下载node（菜鸟教程）【如果是nativeApp还需要下载Python 2】
 
