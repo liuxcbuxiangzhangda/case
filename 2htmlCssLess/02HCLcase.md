@@ -9,4 +9,3 @@
 ###1、footer定位###
 [https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/footer's%20position.html](https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/footer's%20position.html)
 ###2、各类居中###
-[https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/middle.html](https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/middle.html)

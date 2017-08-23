@@ -5,23 +5,23 @@
     <title>行内元素，块级元素垂直水平居中</title>
 </head>
 <style>
-    .box1{
+    .parent{
         width: 300px;
-        height: 40px;
-        border:1px solid red;
-        text-align: center;
-        line-height: 40px;
-    }
-    .box2{
-        width: 1200px;
         height: 200px;
-        text-align: center;
-        line-height: 200px;
-        border:1px solid red;
+        border: 1px solid red;
     }
-    .box2 img{
+   .son{
+       width: 50px;
+       height: 50px;
+       background-color: red;
+   }
+    .box2:after{
+        content: "";
+        display: inline-block;
         vertical-align: middle;
+        height: 100%;
     }
+
     .box3{
         width: 400px;
         height: 300px;
@@ -56,27 +56,38 @@
     }
 </style>
 <body>
-<h1>行内元素居中（文字）</h1>
-<h3>水平居中:父元素text-align=center;<br/>
-    垂直居中:父元素line-height=height</h3>
-<div class="box1"><span>行内元素居中（文字）</span></div>
+<h3>1.设置父元素的padding或者margin适合图片，文字和div,水平垂直都可以</h3>
+<h3>2.单行文字居中，对<img>和div无效</h3>
+<div style="width: 300px;height: 200px;border:1px solid red;text-align: center;line-height: 200px;">
+    <span>行内元素居中（文字）</span>
+    <!--<p style="padding: 0;margin: 0">p元素要去掉默认的margin和padding</p>-->
+  <!--<img src="../images/newbook4.jpg" height="100px"/>-->
+    <!--<div class="son"></div>-->
+</div>
 
+<h3>3.图片居中</h3>
+<div class="parent" style="line-height: 200px;text-align: center">
+    <img src="../images/newbook4.jpg" height="100px" style="vertical-align: middle"/>
+</div>
 
+<h3>4.图片和文字并列</h3>
+<div class="parent" style="width:100%;text-align: center;line-height: 200px">只去掉vertical-align: middle看效果；只去掉line-height: 200px看效果；父元素的文字也在图片中间对齐
+    <img src="../images/newbook4.jpg" height="150px" style="vertical-align: middle"/>
+</div>
 
-<h1>行内元素（图片居中）</h1>
-<h3>水平居中：父元素text-align=center；<br/>
-   垂直居中:父元素line-height=height，自身vertical-align: middle;</h3>
-<div class="box2">只去掉vertical-align: middle看效果；只去掉line-height: 200px看效果；父元素的文字也在图片中间对齐<img src="../images/newbook4.jpg"/></div>
-
-
-
-<h1>行内元素的居中（图片和文字），<a href="http://www.cnblogs.com/xueming/archive/2012/03/21/VerticalAlign.html">完全利用vertical-align,</a>额外增加一个辅助span，这是由于vertical-align特性造成的</h1>
-  <div style="width: 300px;height: 300px;border: 1px solid red;text-align: center">
-      <span style="height: 100%;width: 1px;margin-left: -1px;vertical-align: middle;display: inline-block"></span>
-      <img style="vertical-align: middle" src="../images/newbook4.jpg"/>
-     <!-- <span>再使用图片看看效果</span>-->
+<h3>5.额外增加一个辅助span</h3>
+<a href="http://www.cnblogs.com/xueming/archive/2012/03/21/VerticalAlign.html">完全利用vertical-align,</a>
+  <div class="parent" style="text-align: center">
+      <span style="height: 100%;vertical-align: middle;display:inline-block"></span>
+      <!--<img style="vertical-align: middle" src="../images/newbook4.jpg"/>-->
+      <span>再使用图片看看效果</span>
+      <div class="son" style="display:inline-block;vertical-align: middle"></div>
   </div>
-
+<h3>5.2增加伪类</h3>
+<div class="parent box2" >
+    <div class="son" style="display: inline-block;vertical-align: middle"></div>
+</div>
+<h4>注：5和5.2一样的原理，支持图片，文字，div，图文div并列，不支持IE</h4>
 
 <h1>行内元素居中，直接加表格</h1>
 <div style="width: 300px;height: 300px;border: 1px solid red;text-align: center">

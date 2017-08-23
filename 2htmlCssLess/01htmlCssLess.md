@@ -77,5 +77,30 @@ h. 同一级别的后写的会覆盖先写的
 16.字符实体
 
 17.清除浮动的五种方式
+>` 本身：after{clear:both;content:"";height:0;width:0;display:none;visibility:hidden}`
+>
+>增加一个空白子元素：clear:both
+>
+>本身：overflow：hidden
+>
+>本身清除浮动
+>
+>本身设置固定高度
  
 18.识别不同的浏览器兼容：Modernizr；hack
+
+19.盒子模型的内容：margin，border，padding，content
+
+20.box-sizing有几个值
+> border-box
+> box-content:设置的高宽不包括margin，padding，border
+
+21.各类居中
+> [https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/middle.html](https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/middle.html)
+
+22.垂直居中的八种方式
+
+flex布局
+> [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+> [http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092](http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092)
+
