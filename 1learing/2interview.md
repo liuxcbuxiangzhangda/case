@@ -182,13 +182,6 @@ b。应用程序更易于维护、更新和升级。继承和封装使得应用�
 解决办法是将body换成html
 ###ie6下无法设置1px左右的div###
 > IE6下这个问题是因为默认的行高造成的，解决的方法也有很多，例如：overflow:hidden | zoom:0.08 | line-height:1px
-###各类居中处理###
-###清楚浮动###
-> 设置父元素固定高度（不可取）
->兄弟元素： clear的css属性
->父元素：overflow：hidden和auto都可以，visible不行
->：after方法
->[https://my.oschina.net/leipeng/blog/221125](https://my.oschina.net/leipeng/blog/221125)
 ###重设默认样式###
 > 某些属性如margin、padding等，不同浏览器会有不同的解释。因此最好在开发前首先将全体的margin、padding设置为0、列表样式设置为none等
 ###float元素的父元素不能指定clear属性###
@@ -367,7 +360,7 @@ prompt
         console.log(event.currentTarget===document.body,this===document.body,event.target===document.getElementById("btn"))
     }`
                            
-跨域实现的几种方式，http的组成，HTTP协议，js创建对象的几种方式，http协议,3、div垂直居中的几种方式 4、html5的新特性，删除了哪些元素，新增的元素，html5的兼容性处理 5、js题，考全局变量和局部变量，基本类型和引用类型 6、css3的新特性和兼容性处理 7、冒泡和阻止冒泡 8、angularjs和jQuery不混用，angularjs里面建议了的 9、js事件监听，jQuery的普通绑定和on事件委托，10、jsonp 11，匿名函数使用场景 11，echart和highchart，d3，svg，less 12、ionic.js框架 13.js上传文件，最大传输量 14.ajax请求时间上限  15.通信协议  16.长握手
+跨域实现的几种方式，http的组成，HTTP协议，js创建对象的几种方式，http协议 4、html5的新特性，删除了哪些元素，新增的元素，html5的兼容性处理 5、js题，考全局变量和局部变量，基本类型和引用类型 6、css3的新特性和兼容性处理 7、冒泡和阻止冒泡 8、angularjs和jQuery不混用，angularjs里面建议了的 9、js事件监听，jQuery的普通绑定和on事件委托，10、jsonp 11，echart和highchart，d3，svg，less 12、ionic.js框架 13.js上传文件，最大传输量 14.ajax请求时间上限  15.通信协议  16.长握手
 
 1、 JavaScript包括哪些数据类型？
 
@@ -390,21 +383,6 @@ prompt
 6、
 span{Ann}，加上padding 10px，background yellow，有什么效果，为什么
 <span>Ann</span>
-
-
-
-7、
-display: none;与visibility: hidden;的区别
-
-
-
-
-8、
-容器包含若干浮动元素时如何清理(包含)浮动
-
-
-9、localStorage,cookie区别
-
 
 
 
@@ -461,7 +439,7 @@ for (var i = 0; i < nodes.length; i++) {
 2. 多列式布局 弹性盒子布局 、position float布局
 3. 所有弹出框 jbox（jquery的插件） $.alert()等 待补充
 4. 选择器：css选择器 jquery选择器
-5. 清楚浮动 只能对浮动起作用 不能对绝对定位起作用
+5. 
 6. 编译完成 自动启动浏览器 project里面webpack.config配置文件
 7. angularjs组件之间的通信
 8. fileinput[http://plugins.krajee.com/](http://plugins.krajee.com/)

@@ -76,16 +76,17 @@ h. 同一级别的后写的会覆盖先写的
 
 16.字符实体
 
-17.清除浮动的五种方式
+17.清除浮动的五种方式(只能对浮动起作用,不能对绝对定位起作用)
 >` 本身：after{clear:both;content:"";height:0;width:0;display:none;visibility:hidden}`
 >
 >增加一个空白子元素：clear:both
 >
->本身：overflow：hidden
+>overflow：hidden和auto都可以，visible不行
 >
 >本身清除浮动
 >
 >本身设置固定高度
+>[https://my.oschina.net/leipeng/blog/221125](https://my.oschina.net/leipeng/blog/221125)
  
 18.识别不同的浏览器兼容：Modernizr；hack
 
