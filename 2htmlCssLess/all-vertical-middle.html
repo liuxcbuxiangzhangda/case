@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各类垂直居中（图片，文字，div，并列）</title>
+</head>
+<style>
+    .parent{
+        width: 300px;
+        height: 200px;
+        border: 1px solid red;
+    }
+   .son{
+       width: 50px;
+       height: 50px;
+       background-color: red;
+   }
+    img{
+        height:80px;
+    }
+    .box2:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+
+</style>
+<body>
+<h3>1.设置父元素的padding或者margin适合图片，文字和div,水平垂直都可以</h3>
+<h3>2.单行文字居中，对图片和div无效</h3>
+<div class="parent" style="line-height: 200px;">
+    <span>行内元素居中（文字）</span>
+    <!--<p style="padding: 0;margin: 0">p元素要去掉默认的margin和padding</p>-->
+  <!--<img src="../images/newbook4.jpg"/>-->
+    <!--<div class="son"></div>-->
+</div>
+
+<h3>3.图片居中，对div无效</h3>
+<div class="parent" style="line-height: 200px;">
+    <img src="../images/newbook4.jpg"  style="vertical-align: middle"/>
+    <!--<div class="son" style="vertical-align: middle"></div>-->
+</div>
+
+<h3>4.图片和文字并列(与图片居中是一样的，方案3)</h3>
+<div class="parent" style="width:100%;line-height: 200px">只去掉vertical-align: middle看效果；只去掉line-height: 200px看效果；父元素的文字也在图片中间对齐
+    <img src="../images/newbook4.jpg"  style="vertical-align: middle"/>
+</div>
+
+<h3>5.利用margin负和定位，必须要知道子元素和父元素的高度，-子元素高度/2,适合可设置高宽的元素（div，图片，内联变块级）</h3>
+<div class="parent" style="position: relative " >
+    <!-- <div class="son" style="position: absolute;margin:-25px 0;top:100px;"></div>-->
+    <img src="../images/newbook4.jpg" style="position: absolute;margin:-40px 0;top:100px;"/>
+    <span style="display: inline-block;height:20px;position: absolute;margin: -10px 0;top: 100px">再换图片看效果</span>
+</div>
+
+<h3>6.定位然后用auto,相对于父元素margin：auto，适合可设置高宽的元素（div，图片，内联变块级），IE不支持</h3>
+<div class="parent" style="position: relative " >
+   <!-- <div class="son" style="position: absolute;margin: auto 0;top: 0;bottom: 0"></div>-->
+   <!-- <span style="position: absolute;margin: auto 0;top: 0;bottom: 0">换成图片和div试试效果</span>-->
+    <img src="../images/newbook4.jpg" style="position: absolute;margin: auto 0;top: 0;bottom: 0"/>
+</div>
+
+<h3>7.flex布局，适合图片，div，文字，IE不支持</h3>
+<div class="parent" style="display: flex;align-items:center" >
+   <!-- <div class="son"></div>-->
+     <span >换成图片和div试试效果</span>
+    <!--<img src="../images/newbook4.jpg" />-->
+</div>
+
+
+<h4>注：8和8.2一样的原理，支持图片，文字，div，图文div并列，不支持IE</h4>
+<h3>8.额外增加一个辅助span</h3>
+<a href="http://www.cnblogs.com/xueming/archive/2012/03/21/VerticalAlign.html">完全利用vertical-align,</a>
+  <div class="parent" >
+      <span style="height: 100%;vertical-align: middle;display:inline-block"></span>
+      <!--<img style="vertical-align: middle" src="../images/newbook4.jpg"/>-->
+      <span>再使用图片看看效果</span>
+      <div class="son" style="display:inline-block;vertical-align: middle"></div>
+  </div>
+<h3>8.2增加伪类</h3>
+<div class="parent box2" >
+    <div class="son" style="display: inline-block;vertical-align: middle"></div>
+</div>
+
+<h4>9和9.2一样的原理，支持图片，文字，div</h4>
+<h3>9.直接加表格,支持IE</h3>
+<div class="parent">
+    <table width="100%" height="100%">
+        <tr>
+            <td>
+              <!-- <img src="../images/newbook4.jpg"/>-->
+                <span>再换图片看效果</span>
+                <!--<div class="son"></div>-->
+            </td>
+        </tr>
+    </table>
+</div>
+<h3>9.2设置表格样式，IE不支持</h3>
+<div class="parent" style="display: table-cell;vertical-align: middle">
+     <!--<img src="../images/newbook4.jpg"/>-->
+    <span>再换图片看效果</span>
+    <!--<div class="son" ></div>-->
+</div>
+
+
+
+
+</body>
+</html>
