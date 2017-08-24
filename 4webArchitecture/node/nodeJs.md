@@ -16,10 +16,10 @@ nodejs社区：[https://www.npmjs.com/](https://www.npmjs.com/)
 
 模块化：避免工作的重复，增加复用，争取一个功能一个模块，促进多人同时编写代码
 
-一，定义模块:
+1.定义模块:
 根据CommonJS规范，一个单独的文件就是一个模块。每一个模块都是一个单独的作用域，也就是说，在该模块内部定义的变量，无法被其他模块读取，除非定义为global对象的属性。
 
-二，模块输出：
+2.模块输出：
 模块只有一个出口，module.exports对象，我们需要把模块希望输出的内容放入该对象。
 
     module.exports = {  
@@ -27,8 +27,30 @@ nodejs社区：[https://www.npmjs.com/](https://www.npmjs.com/)
     bName: b  
     }
 
-三，加载模块：
+3.加载模块：
 加载模块使用require方法，该方法读取一个文件并执行，返回文件内部的module.exports对象。
+
+工具模块：
+> 文件系统：fs
+> >代开文件：fs.open()
+> 
+> >获取文件信息：fs.stat()
+> 
+> >写入文件：fs.writeFile()
+> 
+> >读取文件：fs.read()
+> 
+> >关闭文件：fs.close()
+> 
+> >截取文件：fs.ftruncate()
+> 
+> >删除文件：fs.unlink（）
+> 
+> >创建文件目录：fs.mkdir（）
+> 
+> >读取文件目录：fs.readdir（）
+> 
+> >删除文件目录：fs.rmdir（）
 
 node API
 > url

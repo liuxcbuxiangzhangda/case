@@ -95,12 +95,15 @@ h. 同一级别的后写的会覆盖先写的
 > border-box
 > box-content:设置的高宽不包括margin，padding，border
 
-21.各类居中
-> [https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/middle.html](https://github.com/liuxcbuxiangzhangda/3my-css/blob/master/middle.html)
-
-22.垂直居中的八种方式
+21.各类垂直居中
+> [https://github.com/liuxcbuxiangzhangda/case/tree/master/2htmlCssLess/middle](https://github.com/liuxcbuxiangzhangda/case/tree/master/2htmlCssLess/middle)
 
 flex布局
 > [http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 > [http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092](http://blog.csdn.net/NARUTO_LUOLUO/article/details/51281092)
 
+23.footer始终居于底部
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/2htmlCssLess/footer's%20position.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/2htmlCssLess/footer's%20position.html)
+
+24.判断浏览器版本识别：
+> [https://github.com/liuxcbuxiangzhangda/case/blob/master/2htmlCssLess/Compatibility.html](https://github.com/liuxcbuxiangzhangda/case/blob/master/2htmlCssLess/Compatibility.html)
