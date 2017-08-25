@@ -359,6 +359,9 @@ prompt
     ` document.body.onclick=function (event) {
         console.log(event.currentTarget===document.body,this===document.body,event.target===document.getElementById("btn"))
     }`
+
+###前端的三个层级###
+结构层（html），表示层（css），行为层（js）
                            
 跨域实现的几种方式，http的组成，HTTP协议，js创建对象的几种方式，http协议 4、html5的新特性，删除了哪些元素，新增的元素，html5的兼容性处理 5、js题，考全局变量和局部变量，基本类型和引用类型 6、css3的新特性和兼容性处理 7、冒泡和阻止冒泡 8、angularjs和jQuery不混用，angularjs里面建议了的 9、js事件监听，jQuery的普通绑定和on事件委托，10、jsonp 11，echart和highchart，d3，svg，less 12、ionic.js框架 13.js上传文件，最大传输量 14.ajax请求时间上限  15.通信协议  16.长握手
 
