@@ -373,7 +373,7 @@
       activeElement = document.activeElement;
     }
 
-    // do nothing if user is editing text
+    // do nothing if webuser is editing text
     // or using a modifier key (except shift)
     // or in a dropdown
     // or inside interactive elements

@@ -58,7 +58,7 @@ var lastFocusedButton;
 
 /*
  * Global sweetAlert function
- * (this is what the user calls)
+ * (this is what the webuser calls)
  */
 var sweetAlert, swal;
 
@@ -145,7 +145,7 @@ exports['default'] = sweetAlert = swal = function () {
     }
   }
 
-  // Clicking outside the modal dismisses it (if allowed by user)
+  // Clicking outside the modal dismisses it (if allowed by webuser)
   (0, _modulesHandleSwalDom.getOverlay)().onclick = onButtonEvent;
 
   previousWindowKeyDown = window.onkeydown;
@@ -156,7 +156,7 @@ exports['default'] = sweetAlert = swal = function () {
   window.onkeydown = onKeyEvent;
 
   window.onfocus = function () {
-    // When the user has focused away and focused back from the whole window.
+    // When the webuser has focused away and focused back from the whole window.
     setTimeout(function () {
       // Put in a timeout to jump out of the event sequence.
       // Calling focus() in the event sequence confuses things.
@@ -236,7 +236,7 @@ sweetAlert.close = swal.close = function () {
 };
 
 /*
- * Validation of the input field is done by user
+ * Validation of the input field is done by webuser
  * If something is wrong => call showInputError with errorMessage
  */
 sweetAlert.showInputError = swal.showInputError = function (errorMessage) {
@@ -365,7 +365,7 @@ var handleButton = function handleButton(event, params, modal) {
   var modalIsVisible = (0, _handleDom.hasClass)(modal, 'visible');
   var doneFunctionExists = params.doneFunction && modal.getAttribute('data-has-done-function') === 'true';
 
-  // Since the user can change the background-color of the confirm button programmatically,
+  // Since the webuser can change the background-color of the confirm button programmatically,
   // we must calculate what the color should be on hover/active
   var normalColor, hoverColor, activeColor;
   if (targetedConfirm && params.confirmButtonColor) {
@@ -1161,7 +1161,7 @@ module.exports = exports['default'];
 
 },{"./handle-dom":4,"./handle-swal-dom":6,"./utils":9}],9:[function(require,module,exports){
 /*
- * Allow user to pass their own params
+ * Allow webuser to pass their own params
  */
 'use strict';
 
@@ -1186,7 +1186,7 @@ var hexToRgb = function hexToRgb(hex) {
 };
 
 /*
- * Check if the user is using Internet Explorer 8 (for fallbacks)
+ * Check if the webuser is using Internet Explorer 8 (for fallbacks)
  */
 var isIE8 = function isIE8() {
   return window.attachEvent && !window.addEventListener;

@@ -5,7 +5,7 @@ jQuery.validator.defaults.debug = true;
 $.mockjaxSettings.log = $.noop;
 
 $.mockjax({
-	url: "form.php?user=Peter&password=foobar",
+	url: "form.php?webuser=Peter&password=foobar",
 	responseText: "Hi Peter, welcome back.",
 	responseStatus: 200,
 	responseTime: 1
@@ -870,7 +870,7 @@ test( "ignoreTitle", function() {
 
 asyncTest( "ajaxSubmit", function() {
 	expect( 1 );
-	$( "#user" ).val( "Peter" );
+	$( "#webuser" ).val( "Peter" );
 	$( "#password" ).val( "foobar" );
 	jQuery( "#signupForm" ).validate({
 		submitHandler: function( form ) {
@@ -1725,7 +1725,7 @@ test( "Min and Max range set by attributes valid", function() {
 	//
 	// cannot test for overflow:
 	// When the element is suffering from an underflow,
-	// the user agent must set the element"s value to a valid
+	// the webuser agent must set the element"s value to a valid
 	// floating-point number that represents the minimum.
 	// http://www.w3.org/TR/html5/forms.html#range-state-%28type=range%29
 	//

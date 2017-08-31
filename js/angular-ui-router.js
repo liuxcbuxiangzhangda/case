@@ -922,8 +922,8 @@ function UrlMatcher(pattern, config, parentMatcher) {
  * @example
  * The following two matchers are equivalent:
  * <pre>
- * new UrlMatcher('/user/{id}?q').concat('/details?date');
- * new UrlMatcher('/user/{id}/details?q&date');
+ * new UrlMatcher('/webuser/{id}?q').concat('/details?date');
+ * new UrlMatcher('/webuser/{id}/details?q&date');
  * </pre>
  *
  * @param {string} pattern  The pattern to append.
@@ -960,7 +960,7 @@ UrlMatcher.prototype.toString = function () {
  *
  * @example
  * <pre>
- * new UrlMatcher('/user/{id}?q&r').exec('/user/bob', {
+ * new UrlMatcher('/webuser/{id}?q&r').exec('/webuser/bob', {
  *   x: '1', q: 'hello'
  * });
  * // returns { id: 'bob', q: 'hello', r: null }
@@ -1062,8 +1062,8 @@ UrlMatcher.prototype.validates = function (params) {
  *
  * @example
  * <pre>
- * new UrlMatcher('/user/{id}?q').format({ id:'bob', q:'yes' });
- * // returns '/user/bob?q=yes'
+ * new UrlMatcher('/webuser/{id}?q').format({ id:'bob', q:'yes' });
+ * // returns '/webuser/bob?q=yes'
  * </pre>
  *
  * @param {Object} values  the values to substitute for the parameters in this pattern.
@@ -1570,7 +1570,7 @@ function $UrlMatcherFactory() {
    *
    *   // Matches up services to URL parameter names
    *   var services = {
-   *     user: Users,
+   *     webuser: Users,
    *     post: Posts
    *   };
    *
@@ -1602,9 +1602,9 @@ function $UrlMatcherFactory() {
    *   url: "/users",
    *   // ...
    * }).state('users.item', {
-   *   url: "/{user:dbObject}",
+   *   url: "/{webuser:dbObject}",
    *   controller: function($scope, $stateParams) {
-   *     // $stateParams.user will now be an object returned from
+   *     // $stateParams.webuser will now be an object returned from
    *     // the Users service
    *   },
    *   // ...
@@ -1898,7 +1898,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * app.config(function ($urlRouterProvider) {
    *   // if the path doesn't match any of the urls you configured
-   *   // otherwise will take care of routing the user to the
+   *   // otherwise will take care of routing the webuser to the
    *   // specified url
    *   $urlRouterProvider.otherwise('/index');
    *
@@ -1969,7 +1969,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * </pre>
    *
    * @param {string|object} what The incoming path that you want to redirect.
-   * @param {string|function} handler The path you want to redirect your user to.
+   * @param {string|function} handler The path you want to redirect your webuser to.
    */
   this.when = function (what, handler) {
     var redirect, handlerIsString = isString(handler);
@@ -2041,14 +2041,14 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * }).run(function ($rootScope, $urlRouter, UserService) {
    *
    *   $rootScope.$on('$locationChangeSuccess', function(e) {
-   *     // UserService is an example service for managing user state
+   *     // UserService is an example service for managing webuser state
    *     if (UserService.isLoggedIn()) return;
    *
    *     // Prevent $urlRouter's default handler from firing
    *     e.preventDefault();
    *
    *     UserService.handleLogin().then(function() {
-   *       // Once the user has logged in, sync the current URL
+   *       // Once the webuser has logged in, sync the current URL
    *       // to the router:
    *       $urlRouter.sync();
    *     });
@@ -2579,7 +2579,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * // ...
    *
    * $state.go('home');
-   * // Auto-populates list and item views with /partials/home/contact/list.html,
+   * // Auto-populates list and item views with /partials/home/contact/weblist.html,
    * // and /partials/home/contact/item.html, respectively.
    * </pre>
    *
@@ -2971,7 +2971,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     var TransitionAborted = silenceUncaughtInPromise($q.reject(new Error('transition aborted')));
     var TransitionFailed = silenceUncaughtInPromise($q.reject(new Error('transition failed')));
 
-    // Handles the case where a state which is the target of a transition is not found, and the user
+    // Handles the case where a state which is the target of a transition is not found, and the webuser
     // can optionally retry or defer the transition
     function handleRedirect(redirect, state, params, options) {
       /**
