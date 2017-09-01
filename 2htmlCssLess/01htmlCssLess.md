@@ -27,7 +27,10 @@ h. 同一级别的后写的会覆盖先写的
 > 
 >rem： [http://www.w3cplus.com/css3/define-font-size-with-css3-rem](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
 
-> 自适应：[http://mp.weixin.qq.com/s/vLuc3CIX_bx0HPLo9wZReA](http://mp.weixin.qq.com/s/vLuc3CIX_bx0HPLo9wZReA)
+> 自适应：
+> [http://m.imooc.com/article/details?article_id=10029](http://m.imooc.com/article/details?article_id=10029)
+> 
+> [http://mp.weixin.qq.com/s/vLuc3CIX_bx0HPLo9wZReA](http://mp.weixin.qq.com/s/vLuc3CIX_bx0HPLo9wZReA)
 
 6.pointer-events   穿透
 
@@ -77,15 +80,15 @@ h. 同一级别的后写的会覆盖先写的
 16.字符实体
 
 17.清除浮动的五种方式(只能对浮动起作用,不能对绝对定位起作用)
->` 本身：after{clear:both;content:"";height:0;width:0;display:none;visibility:hidden}`
+>` 父元素：after{clear:both;content:"";height:0;width:0;display:none;visibility:hidden}`
 >
->增加一个空白子元素：clear:both
+>增加一个空白同级元素：clear:both
 >
->overflow：hidden和auto都可以，visible不行
+>父元素overflow：hidden和auto都可以，visible不行
 >
->本身清除浮动
+>父元素清除浮动
 >
->本身设置固定高度
+>父元素设置固定高度
 >[https://my.oschina.net/leipeng/blog/221125](https://my.oschina.net/leipeng/blog/221125)
  
 18.识别不同的浏览器兼容：Modernizr；hack

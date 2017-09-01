@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="show"></div>
+<input type="button" value="将请求的数据展示在页面上" onclick="change()">
+</body>
+</html>
+<script>
+    function change() {
+        var xrequest;
+        if(window.XMLHttpRequest){
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xrequest=new XMLHttpRequest()
+        }else {
+            // IE6, IE5 浏览器执行代码
+            xrequest=new ActiveXObject()
+        }
+        //xrequest.onreadystatechange准备就续
+        xrequest.onreadystatechange=function () {
+            if(xrequest.readyState==4&&xrequest.status==200){
+                //xrequest.responseText返回的内容
+                document.getElementById("show").innerHTML=xrequest.responseText;
+                //xrequest.status返回的状态
+                console.log("xrequest.status:"+xrequest.status)
+                //xrequest.statusText返回的状态码
+                console.log("xrequest.statusText:"+xrequest.statusText)
+                //xrequest.getAllResponseHeaders()请求头信息
+                console.log("请求头信息:"+xrequest.getAllResponseHeaders())
+                //xrequest.getResponseHeader('参数')请求头信息某一项
+                console.log("请求头信息某一项:"+xrequest.getResponseHeader('Last-Modified'))
+            }
+        }
+        xrequest.open("get","../url1.txt",true);
+        xrequest.send();
+    }
+
+
+</script>
