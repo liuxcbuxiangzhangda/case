@@ -1,7 +1,7 @@
 ;(function(window, document, undefined) {
   "use strict";
   
-  (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+  (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find functions '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // SweetAlert
 // 2014-2015 (c) - Tristan Edwards
 // github.com/t4t5/sweetalert
@@ -298,11 +298,11 @@ sweetAlert.enableButtons = swal.enableButtons = function (event) {
 };
 
 if (typeof window !== 'undefined') {
-  // The 'handle-click' module requires
+  // The 'handle-click' functions requires
   // that 'sweetAlert' was set as global.
   window.sweetAlert = window.swal = sweetAlert;
 } else {
-  (0, _modulesUtils.logStr)('SweetAlert is a frontend module!');
+  (0, _modulesUtils.logStr)('SweetAlert is a frontend functions!');
 }
 module.exports = exports['default'];
 

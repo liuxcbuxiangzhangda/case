@@ -18,7 +18,7 @@
 		// For CommonJS and CommonJS-like environments where a proper window is present,
 		// execute the factory and get jQuery
 		// For environments that do not inherently posses a window with a document
-		// (such as Node.js), expose a jQuery-making factory as module.exports
+		// (such as Node.js), expose a jQuery-making factory as functions.exports
 		// This accentuates the need for the creation of a real window
 		// e.g. var jQuery = require("jquery")(window);
 		// See ticket #14549 for more info
@@ -240,7 +240,7 @@ jQuery.extend({
 	// Unique for each copy of jQuery on the page
 	expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
 
-	// Assume jQuery is ready without the ready module
+	// Assume jQuery is ready without the ready functions
 	isReady: true,
 
 	error: function( msg ) {
@@ -3495,7 +3495,7 @@ jQuery.ready.promise = function( obj ) {
 			// A fallback to window.onload, that will always work
 			window.addEventListener( "load", completed, false );
 
-		// If IE event model is used
+		// If IE event call-function is used
 		} else {
 			// Ensure firing before onload, maybe late but safe also for iframes
 			document.attachEvent( "onreadystatechange", completed );
@@ -3595,7 +3595,7 @@ jQuery(function() {
 (function() {
 	var div = document.createElement( "div" );
 
-	// Execute the test only if not already executed in another module.
+	// Execute the test only if not already executed in another functions.
 	if (support.deleteExpando == null) {
 		// Support: IE<9
 		support.deleteExpando = true;
@@ -4213,7 +4213,7 @@ var rcheckableType = (/^(?:checkbox|radio)$/i);
 		div.cloneNode( true ).click();
 	}
 
-	// Execute the test only if not already executed in another module.
+	// Execute the test only if not already executed in another functions.
 	if (support.deleteExpando == null) {
 		// Support: IE<9
 		support.deleteExpando = true;
@@ -6581,7 +6581,7 @@ function getWidthOrHeight( elem, name, extra ) {
 		val = parseFloat( val ) || 0;
 	}
 
-	// use the active box-sizing model to add/subtract irrelevant styles
+	// use the active box-sizing call-function to add/subtract irrelevant styles
 	return ( val +
 		augmentWidthOrHeight(
 			elem,
@@ -8097,7 +8097,7 @@ if ( !getSetAttribute ) {
 			}
 		};
 
-	// Fixing value retrieval on a button requires this module
+	// Fixing value retrieval on a button requires this functions
 	jQuery.valHooks.button = {
 		get: function( elem, name ) {
 			var ret = elem.getAttributeNode( name );
@@ -10183,7 +10183,7 @@ jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( 
 // Add the top/left cssHooks using jQuery.fn.position
 // Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
 // getComputedStyle returns percent when specified for top/left/bottom/right
-// rather than make the css module depend on the offset module, we just check for it here
+// rather than make the css functions depend on the offset functions, we just check for it here
 jQuery.each( [ "top", "left" ], function( i, prop ) {
 	jQuery.cssHooks[ prop ] = addGetHookIf( support.pixelPosition,
 		function( elem, computed ) {
@@ -10252,12 +10252,12 @@ jQuery.fn.andSelf = jQuery.fn.addBack;
 
 
 
-// Register as a named AMD module, since jQuery can be concatenated with other
+// Register as a named AMD functions, since jQuery can be concatenated with other
 // files that may use define, but not via a proper concatenation script that
 // understands anonymous AMD modules. A named AMD is safest and most robust
-// way to register. Lowercase jquery is used because AMD module names are
+// way to register. Lowercase jquery is used because AMD functions names are
 // derived from file names, and jQuery is normally delivered in a lowercase
-// file name. Do this after creating the global so that if an AMD module wants
+// file name. Do this after creating the global so that if an AMD functions wants
 // to call noConflict to hide this version of jQuery, it will work.
 
 // Note that for maximum portability, libraries that are not jQuery should

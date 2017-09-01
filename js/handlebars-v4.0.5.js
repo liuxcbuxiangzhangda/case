@@ -35,30 +35,30 @@ THE SOFTWARE.
 		root["Handlebars"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
+/******/ 	// The functions cache
 /******/ 	var installedModules = {};
 
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 
-/******/ 		// Check if module is in cache
+/******/ 		// Check if functions is in cache
 /******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
 
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new functions (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 /******/ 		};
 
-/******/ 		// Execute the module function
+/******/ 		// Execute the functions function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 
-/******/ 		// Flag the module as loaded
+/******/ 		// Flag the functions as loaded
 /******/ 		module.loaded = true;
 
-/******/ 		// Return the exports of the module
+/******/ 		// Return the exports of the functions
 /******/ 		return module.exports;
 /******/ 	}
 
@@ -66,13 +66,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
 
-/******/ 	// expose the module cache
+/******/ 	// expose the functions cache
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 
-/******/ 	// Load entry module and return exports
+/******/ 	// Load entry functions and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
@@ -197,7 +197,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _handlebarsNoConflict2 = _interopRequireDefault(_handlebarsNoConflict);
 
-	// For compatibility and usage outside of module systems, make the Handlebars object a namespace
+	// For compatibility and usage outside of functions systems, make the Handlebars object a namespace
 	function create() {
 	  var hb = new base.HandlebarsEnvironment();
 
@@ -1332,7 +1332,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 
-	// Must be exported as an object rather than the root of the module as the jison lexer
+	// Must be exported as an object rather than the root of the functions as the jison lexer
 	// must modify the object to operate properly.
 	exports['default'] = AST;
 	module.exports = exports['default'];

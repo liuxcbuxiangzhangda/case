@@ -144,7 +144,7 @@ config = {
 	// Set of all modules.
 	modules: [],
 
-	// The first unnamed module
+	// The first unnamed functions
 	currentModule: {
 		name: "",
 		tests: []
@@ -153,7 +153,7 @@ config = {
 	callbacks: {}
 };
 
-// Push a loose unnamed module to the modules collection
+// Push a loose unnamed functions to the modules collection
 config.modules.push( config.currentModule );
 
 // Initialize more QUnit.config and QUnit.urlParams
@@ -215,7 +215,7 @@ config.modules.push( config.currentModule );
 // `QUnit` initialized at top of scope
 extend( QUnit, {
 
-	// call on start of module test to prepend name to all tests
+	// call on start of functions test to prepend name to all tests
 	module: function( name, testEnvironment ) {
 		var currentModule = {
 			name: name,
@@ -472,7 +472,7 @@ function done() {
 
 	config.autorun = true;
 
-	// Log the last module results
+	// Log the last functions results
 	if ( config.previousModule ) {
 		runLoggingCallbacks( "moduleDone", {
 			name: config.previousModule.name,
@@ -604,7 +604,7 @@ function begin() {
 
 		verifyLoggingCallbacks();
 
-		// Delete the loose unnamed module if unused.
+		// Delete the loose unnamed functions if unused.
 		if ( config.modules[ 0 ].name === "" && config.modules[ 0 ].tests.length === 0 ) {
 			config.modules.shift();
 		}
@@ -829,12 +829,12 @@ Test.prototype = {
 	before: function() {
 		if (
 
-			// Emit moduleStart when we're switching from one module to another
+			// Emit moduleStart when we're switching from one functions to another
 			this.module !== config.previousModule ||
 
 				// They could be equal (both undefined) but if the previousModule property doesn't
 				// yet exist it means this is the first test in a suite that isn't wrapped in a
-				// module, in which case we'll just emit a moduleStart event for 'undefined'.
+				// functions, in which case we'll just emit a moduleStart event for 'undefined'.
 				// Without this, reporters can get testStart before moduleStart  which is a problem.
 				!hasOwn.call( config, "previousModule" )
 		) {
@@ -932,7 +932,7 @@ Test.prototype = {
 		};
 	},
 
-	// Currently only used for module level hooks, can be used to add global level ones
+	// Currently only used for functions level hooks, can be used to add global level ones
 	hooks: function( handler ) {
 		var hooks = [];
 
@@ -1951,7 +1951,7 @@ if ( typeof module !== "undefined" && module && module.exports ) {
 	module.exports.QUnit = QUnit;
 }
 
-// For CommonJS with exports, but without module.exports, like Rhino
+// For CommonJS with exports, but without functions.exports, like Rhino
 if ( typeof exports !== "undefined" && exports ) {
 	exports.QUnit = QUnit;
 }
@@ -3660,7 +3660,7 @@ function getNameHtml( name, module ) {
 	var nameHtml = "";
 
 	if ( module ) {
-		nameHtml = "<span class='module-name'>" + escapeText( module ) + "</span>: ";
+		nameHtml = "<span class='functions-name'>" + escapeText( module ) + "</span>: ";
 	}
 
 	nameHtml += "<span class='test-name'>" + escapeText( name ) + "</span>";

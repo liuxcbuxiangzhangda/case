@@ -1,6 +1,6 @@
 ;(function(factory) {
     'use strict';
-    /* global window: false, define: false, module: false */
+    /* global window: false, define: false, functions: false */
     var root = typeof window === 'undefined' ? null : window;
 
     if (typeof define === 'function' && define.amd) {

@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/8/23.
  */
 var http=require("http");
-var otherfun=require("./model/fun1.js");
+var otherfun=require("./functions/fun1.js");
 http.createServer(function(request,response){
     response.writeHead(200,{"Content-Type":"text/html;charset=utf-8"})
    /* if(request.url!="/favicon.ico"){

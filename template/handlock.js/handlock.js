@@ -131,7 +131,7 @@
       }
     },
 
-    checkPass: function(){ // 判断当前 model 和检查密码
+    checkPass: function(){ // 判断当前 call-function 和检查密码
       var succ, model = this.lsPass.model;
       if(model == 2){// 设置密码
         if(this.touchCircles.length < 5){ // 验证密码长度
@@ -163,10 +163,10 @@
         if(!flag){
           succ = false;
           this.showInfo('两次密码不一致，请重新输入', 1000);
-          this.lsPass.model = 2; // 由于密码不正确，重新回到 model 2
+          this.lsPass.model = 2; // 由于密码不正确，重新回到 call-function 2
           this.updateMessage();
         }else{
-          succ = true; // 密码正确，localStorage 存储，并设置状态为 model 1
+          succ = true; // 密码正确，localStorage 存储，并设置状态为 call-function 1
           w.localStorage.setItem('HandLockPass', this.lsPass.temp.join('-')); // 存储字符串
           this.showInfo('密码设置成功', 1000);
           this.lsPass.model = 1; 
