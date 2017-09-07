@@ -22,7 +22,7 @@ mvm框架
 ###组件###
 一个组件就是一个.vue文件（html：展现层，js：model层，css），这个vue文件在webpack打包的时候会被打包成浏览器能识别的html
 
-###vue对象重要字段##
+###vue对象选项##
 new Vue（{各字段}）
 
 data:数据
@@ -30,6 +30,10 @@ data:数据
 methods：方法
 
 watch：监听数据变化
+
+components：注册组件
+
+props：组件之间调用的时候，子组件可以设置属性名
 
 ###模版指令###
 写在html中的。vue对象中的设置通过指令进行关联的
@@ -54,6 +58,13 @@ v-on：事件绑定 简写@
 
 v-bind：属性绑定 ：class和：src简写
 
+v-model：随表单控件类型的不同而不同，只在input select textarea里面用
+
+###组件分类及组件之间的调用，父向子，子向父###
+按功能，按结构
+
+父向子传值：在父组件中引用子组件文件，注册子组件components，在子组件中传入props选项，在父组件中使用属性传值，在子组件中就可以使用传入的值
+
 ###注意###
 index.html是项目的入口
 
@@ -63,3 +74,20 @@ import(es6的语法)等价于require
 
     new Vue({字段})等价于export default{字段}
     data(){return{}}等价于data:function(){return{}}
+
+去掉配置的严格模式，不然少了空格都报报错
+![](https://i.imgur.com/X42rTW1.png)
+
+修改main.js的设置false改为true，方便报错查错
+
+![](https://i.imgur.com/zFuVrAQ.png)
+
+webstrom添加模板支持，写代码的时候可以提示
+[http://www.jianshu.com/p/142dae4f8b51](http://www.jianshu.com/p/142dae4f8b51)
+
+web储存
+![](https://i.imgur.com/kDhsOZQ.png)
+
+![](https://i.imgur.com/pr1hY4w.png)
+
+
