@@ -1,7 +1,7 @@
 
-慕课网
+慕课网：注重项目搭建
 
-[http://jspang.com/](http://jspang.com/)
+技术胖[http://jspang.com/](http://jspang.com/)：注重基础
 
 
 官网：[https://cn.vuejs.org/](https://cn.vuejs.org/)
@@ -33,6 +33,8 @@ mvm框架
 new Vue（{各字段}）
 
 data:数据
+
+computed：计算属性
 
 methods：方法
 

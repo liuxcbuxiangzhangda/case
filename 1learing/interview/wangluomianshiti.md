@@ -1,1 +1,6 @@
 [http://m.imooc.com/article/10057](http://m.imooc.com/article/10057)
+
+
+前端大全js面试题：[https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552588&idx=1&sn=85701109cec1424d39cd31b4ff1c9b7a&chksm=8025ac8db752259b83d8b39074aa350375b6ef5c0f21234c7a993b5302b17d50961d21bd7da5&mpshare=1&scene=23&srcid=0909MVKkH9MjVrDStX5gUlp8#rd](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552588&idx=1&sn=85701109cec1424d39cd31b4ff1c9b7a&chksm=8025ac8db752259b83d8b39074aa350375b6ef5c0f21234c7a993b5302b17d50961d21bd7da5&mpshare=1&scene=23&srcid=0909MVKkH9MjVrDStX5gUlp8#rd)
+
+[https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552592&idx=2&sn=b457115fc1e5ce62b9c7a76f1796cc32&chksm=8025ac91b75225873698476fcdcc6de8c33411f63cc49f8a5e3d4a656f7ac367d92dd7199d0d&mpshare=1&scene=23&srcid=0909dUP5f6I7Yyl7TGrfcoOz#rd](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552592&idx=2&sn=b457115fc1e5ce62b9c7a76f1796cc32&chksm=8025ac91b75225873698476fcdcc6de8c33411f63cc49f8a5e3d4a656f7ac367d92dd7199d0d&mpshare=1&scene=23&srcid=0909dUP5f6I7Yyl7TGrfcoOz#rd)
