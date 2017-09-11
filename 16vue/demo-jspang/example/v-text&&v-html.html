@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-text&&v-html</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+
+<body>
+<h4>
+    <p>1.{{}}是v-text简写，当网速慢和script出错时{{}}显示不友好，所以常用v-text</p>
+    <p>2.v-html可以解析html结构：工作中尽量少用，因为会引起xss攻击，特别是用户提交表单时千万不能用，除非保证页面安全</p>
+</h4>
+<hr>
+<div id="app">
+  <div>{{msg}}</div>
+  <div v-html="tudo"></div>
+
+</div>
+<script>
+    var mm=new Vue({
+        el:"#app",
+        data:{
+           msg:"hello",
+            tudo:"<h2>hello w</h2>"
+        }
+    })
+</script>
+</body>
+</html>

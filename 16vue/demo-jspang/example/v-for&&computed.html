@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for&&computed</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+
+<body>
+<h4>
+ <p>1.v-for:循环</p>
+ <p>2.computed:计算属性</p>
+ <p>3.sort()排序的机制：数字排序对比首数字，数组对象排序</p>
+</h4>
+<hr>
+<div id="app">
+    <ul>
+        <li v-for="item in newitems">{{item}}</li>
+    </ul>
+   <hr>
+    <ul>
+        <!--标记序号-->
+        <li v-for="(student,idex) in newstudents">
+            {{idex+1}}:{{student.name}}-{{student.age}}
+        </li>
+    </ul>
+
+</div>
+<script>
+    var mm=new Vue({
+        el:"#app",
+        data:{
+           items:[1,34,12,64,25,77,8],
+            students:[
+                {name:"liu",age:16},
+                {name:"he",age:20},
+                {name:"xue",age:13},
+                {name:"di",age:20},
+                {name:"chun",age:26}
+            ]
+        },
+        computed:{
+            //必须将items修改成另外的名字（newitems），因为vue有保护机制
+            newitems:function () {
+               /*return this.items.sort() */ //8会排在最后，因为是比较第一个字母大小
+                return this.items.sort(sortNum)
+
+             },
+            newstudents: function () {
+                return sortByKey(this.students,"age")
+            }
+        }
+    });
+     /*数字排序*/
+    function sortNum(a,b){
+        return a-b
+    }
+    /*数组对象排序*/
+    function sortByKey(array,key){
+        return array.sort(function(a,b){
+            var x=a[key];
+            var y=b[key];
+            return ((x<y)?-1:((x>y)?1:0));
+        });
+    }
+</script>
+</body>
+</html>
