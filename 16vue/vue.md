@@ -1,6 +1,8 @@
 
 慕课网：注重项目搭建
 
+[https://github.com/liuxcbuxiangzhangda/vue-demo-muke](https://github.com/liuxcbuxiangzhangda/vue-demo-muke)
+
 技术胖[http://jspang.com/](http://jspang.com/)：注重基础
 
 
@@ -12,7 +14,7 @@ git上面的：
 
 [https://vuejs-templates.github.io/webpack/](https://vuejs-templates.github.io/webpack/)
 
-自己gituhub上面的vue-demo
+
 
 ###vue特点###
 自带热更新，
@@ -24,7 +26,14 @@ mvm框架
 使用命名行安装搭建vue工程，省去很多麻烦
 
 ###新建项目和搭建环境：###
-下载node和git，设置npm镜像（参照nativeApp的教程），全局安装vue-cli（才能使用vue命令）,创建新项目（vue init webpack 项目名称）webpack是项目类型，cd 项目名称，安装所有依赖（npm install），npm run dev
+下载node和git，设置npm镜像（参照nativeApp的教程），全局安装vue-cli（才能使用vue命令）,创建新项目（vue init webpack 项目名称）webpack是项目类型，cd 项目名称，安装所有依赖（npm install），npm run dev，开始项目（只需修改src文件夹中的内容）
+
+去掉配置的严格模式，不然少了空格都报报错
+![](https://i.imgur.com/X42rTW1.png)
+
+修改main.js的设置false改为true，方便报错查错
+
+![](https://i.imgur.com/zFuVrAQ.png)
 
 ###组件###
 一个组件就是一个.vue文件（html：展现层，js：model层，css），这个vue文件在webpack打包的时候会被打包成浏览器能识别的html
@@ -88,12 +97,7 @@ import(es6的语法)等价于require
     new Vue({字段})等价于export default{字段}
     data(){return{}}等价于data:function(){return{}}
 
-去掉配置的严格模式，不然少了空格都报报错
-![](https://i.imgur.com/X42rTW1.png)
 
-修改main.js的设置false改为true，方便报错查错
-
-![](https://i.imgur.com/zFuVrAQ.png)
 
 webstrom添加模板支持，写代码的时候可以提示
 [http://www.jianshu.com/p/142dae4f8b51](http://www.jianshu.com/p/142dae4f8b51)
