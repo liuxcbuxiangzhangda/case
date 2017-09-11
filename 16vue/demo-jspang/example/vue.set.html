@@ -8,18 +8,22 @@
 <body>
 <h4>
     <p>1.Vue.set 的作用就是在构造器外部操作构造器内部的数据、属性或者方法。</p>
-    <p>2.Vue.set 主要是用下标改变数组某一项值的时候，因为vue本身监测不到下标变化。操作数值原生方法可以操作</p>
+    <p>2.Vue.set 主要是用下标改变数组某一项值的时候，因为vue本身监测不到数组下标变化。操作数值原生方法可以操作</p>
 </h4>
 <hr>
 <div id="app">
     <p>{{count}}</p>
 </div>
 <button onclick="addcoute()">ADD</button>
+
+<hr>
 <div id="app2">
+    {{counter}}
     <ul>
-        <li v-for="item in outdata2">{{item}}</li>
+        <li v-for="item in arr">{{item}}</li>
     </ul>
 </div>
+<button onclick="addcoute2()"></button>
 <script>
 var outdata={
     count:1,
@@ -35,11 +39,19 @@ function addcoute() {
     Vue.set(outdata,"count","2") //把count的值修改成2
 }
 /*vue.set真正意义用法*/
-var outdata2=["aaa","bbb","ccc"] ;
+var outdata2={
+    counter:0,
+    arr:["aaa","bbb","ccc"]
+  };
 var app2=new Vue({
     el:"#app2",
     data:outdata2
-})
+});
+function addcoute2(){
+     //app2.counter++;
+    //app2.arr[2]="ff";  //没有app2.counter++同时使用，此行代码不能改变数组的相对坐标下的值
+        Vue.set(app2.arr,"2","ff")
+    }
 </script>
 </body>
 </html>
