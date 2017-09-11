@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.set</title>
+    <script src="../assets/js/vue.js"></script>
+</head>
+<body>
+<h4>
+    <p>1.Vue.set 的作用就是在构造器外部操作构造器内部的数据、属性或者方法。</p>
+    <p>2.Vue.set 主要是用下标改变数组某一项值的时候，因为vue本身监测不到下标变化。操作数值原生方法可以操作</p>
+</h4>
+<hr>
+<div id="app">
+    <p>{{count}}</p>
+</div>
+<button onclick="addcoute()">ADD</button>
+<div id="app2">
+    <ul>
+        <li v-for="item in outdata2">{{item}}</li>
+    </ul>
+</div>
+<script>
+var outdata={
+    count:1,
+    goods:"car"
+};
+var app=new Vue({
+    el:"#app",
+    data:outdata
+});
+function addcoute() {
+  //outdata.count++  //js原生方法
+    //app.count++
+    Vue.set(outdata,"count","2") //把count的值修改成2
+}
+/*vue.set真正意义用法*/
+var outdata2=["aaa","bbb","ccc"] ;
+var app2=new Vue({
+    el:"#app2",
+    data:outdata2
+})
+</script>
+</body>
+</html>
