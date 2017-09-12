@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>propsData选项 全局扩展的数据传递</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+<body>
+<h4>
+    <p>扩展和propsData选项用得不多</p>
+    <p><a href="vue.extend.html">扩展vue.extend</a></p>
+</h4>
+<hr>
+<tagA></tagA>
+<script>
+  var extendtag=Vue.extend({
+      template:"<h3>i am {{msg}}----{{a}}-----{{b}}</h3>",
+      data:function () {
+          return {
+              msg:"kuozhan",
+          }
+      },
+      props:["a","b"]
+  });
+  //一个对象做参数
+    new extendtag(
+            {
+                propsData:{"a":1,"b":3}
+            }
+        ).$mount("tagA")
+</script>
+</body>
+</html>

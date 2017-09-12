@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template三种方法</title>
+    <script src="../assets/js/vue.js"></script>
+</head>
+<body>
+<h4>
+    <p>第一种选项模板（适合很小的模板）：template属于构造器的一个选项（类似data），但是需要``(tab键上面的键)而不是单引号或者双引号</p>
+    <p>第二种template标签模板：需要给template一个id</p>
+    <p>第san种script标签模板（适用外部引用模板）：src可以引用外部模板，注意type的值，还需要给script便签一个id</p>
+</h4>
+<hr>
+<div id="app">
+    <template id="app2">
+        <h2>tempalte标签模板{{msg}}</h2>
+    </template>
+</div>
+<script type="x-template" id="app3" src="">
+    <h2>script标签模板{{msg}}</h2>
+</script>
+<script>
+    var vueapp=new Vue({
+        el:"#app",
+        data:{
+            msg:"hello world"
+        },
+        //template:`<h2>选项模板{{msg}}</h2>`  //选项模板
+        template:"#app3"
+    })
+</script>
+
+</body>
+</html>
