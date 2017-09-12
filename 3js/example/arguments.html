@@ -20,11 +20,13 @@
 <h5>
     5、没有 传递 值 的 命名 参数 将 自动 被 赋予 undefined 值。 这就 跟 定义 了 变量 但又 没有 初始化 一样。
 </h5>
+<hr>
+<h4>查看控制台输出的</h4>
 </body>
 <script>
     function mm() {
         for(var i=0;i<arguments.length;i++){
-            alert("输出函数的实参"+i+":"+arguments[i]);
+           console.log("输出函数的实参"+i+":"+arguments[i]);
         }
     }
     mm("ff","ss","kk");
