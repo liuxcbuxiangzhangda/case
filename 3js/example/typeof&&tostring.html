@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>typeof判断数据类型的利弊（主要是判断对象）</title>
+</head>
+<body>
+<h4>
+    <p>1.五种基本类型的数据：string,number,boolean,undefined,null,object;<br/>而typeof判断出来的数据类型：string,number,boolean,undefined,object,function;这就是typeof判断数据有弊的主要原因</p>
+    <p>2.toString.call(bar) !== "[object Array]")和! $.isArray(bar)都是判断bar是不是数组的做法</p>
+</h4>
+    <h2>点开链接</h2>
+    <h3><a href="http://www.cnblogs.com/youhong/p/6209054.html" target="_blank">3.typeof，toString（），Object.prototype.toString.call(obj)判断数据类型的区别</a></h3>
+    <p>typeof返回的object包含了object，array，null</p>
+    <p> toString（）为Object的原型方法，而Array ，function等类型作为Object的实例，都重写了toString方法</p>
+    <p> Object.prototype.toString.call(obj)准确判断数据类型</p>
+
+
+</body>
+<script>
+    //用typeof准确判断是不是对象:去除是null的可能，加上是function的可能
+    var object1={mm:"kk",ff:"jj"};//换null,function,数组试试
+    console.log(object1!=null&&(typeof object1=="object")||(typeof object1=="function"))
+    //判断是此对象是（不包含数组，函数）的对象
+    console.log(object1!=null&&(typeof object1=="object")&& (toString.call(object1) !== "[object Array]"))
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4><a href="https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552588&idx=1&sn=85701109cec1424d39cd31b4ff1c9b7a&chksm=8025ac8db752259b83d8b39074aa350375b6ef5c0f21234c7a993b5302b17d50961d21bd7da5&mpshare=1&scene=23&srcid=0909MVKkH9MjVrDStX5gUlp8#rd">题目：25题js面试</a></h4>
+<h4>答案在控制台查看</h4>
+<script>
+    //第二题
+    (function(){
+       // "use strict" 使用use strict查看效果
+        var a = b = 3;
+    })();
+    console.log("a defined? " + (typeof a !== 'undefined'));
+    console.log("b defined? " + (typeof b !== 'undefined'));
+   //第三题
+    var myObject = {
+        foo: "bar",
+        func: function() {
+            var self = this;
+            console.log("outer func:  this.foo = " + this.foo);
+            console.log("outer func:  self.foo = " + self.foo);
+            (function() {
+                console.log("inner func:  this.foo = " + this.foo);
+                console.log("inner func:  self.foo = " + self.foo);
+            }());
+        }
+    };
+    myObject.func()
+    //第六题 return后面不能为空代码行
+    function foo1()
+    {
+        return{
+            bar: "hello"
+        };
+    };
+
+    function foo2()
+    {
+        return
+        {
+            bar: "hello"
+        };
+    }
+    console.log(foo1());
+    console.log(foo2());
+
+</script>
+</body>
+</html>
