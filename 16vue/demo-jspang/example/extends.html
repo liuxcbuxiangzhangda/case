@@ -14,9 +14,21 @@
 </h4>
 <hr>
 <div id="app">
-
+<p>显示值：{{msg}}</p>
+    <p><button @click="add"></button></p>
 </div>
 <script>
+    var kuozhan={
+        updated:function(){
+            console.log("我是被扩展出来的")
+        },
+       methods:{
+           //同名了不会被执行的
+           add:function(){
+               console.log("扩展里面的函数")
+           }
+       }
+    };
 
     var mm=new Vue({
         el:"#app",
@@ -25,10 +37,14 @@
         },
         methods:{
             add:function () {
-                console.log()
+                console.log("执行构造器里面的函数")
                 this.msg++
             }
-        }
+        },
+        updated:function(){
+            console.log("更新时执行")
+        },
+        extends:kuozhan  //混入是数组，这里是一个
 
     })
 </script>
