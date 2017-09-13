@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>watch检测数据</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+<body>
+<h4>
+    <p>构造里面写watch</p>
+    <p>构造外面写$watch</p>
+</h4>
+<hr>
+<div id="app">
+   <p>今日温度：{{temperature}}</p>
+   <p>穿衣指南：{{clothes}}</p>
+    <button @click="rise">升温</button>
+    <button v-on:click="down">降温</button>
+</div>
+<script>
+
+    var clothesarr=["毛衣羽绒服","夹克长裙","T恤短裤"]
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            temperature:10,
+            clothes:"夹克长裙"
+        },
+        methods:{
+           rise:function () {
+               this.temperature+=5
+           },
+            down:function () {
+                this.temperature-=5
+            }
+        }
+       /* watch:{
+            temperature:function (newvalue,oldvalue) {
+                if(newvalue<5){
+                    this.clothes=clothesarr[0]
+                }else if(newvalue>=5&&newvalue<26){
+                    this.clothes=clothesarr[1]
+                }else{
+                    this.clothes=clothesarr[2]
+                }
+            }
+        }*/
+    });
+    mm.$watch("temperature",function (newvalue,oldvalue) {
+        if(newvalue<5){
+            this.clothes=clothesarr[0]
+        }else if(newvalue>=5&&newvalue<26){
+            this.clothes=clothesarr[1]
+        }else{
+            this.clothes=clothesarr[2]
+        }
+    })
+</script>
+</body>
+</html>

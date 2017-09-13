@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extends扩展选项</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+<body>
+<h4>
+    <p>扩展和混入很类似</p>
+    <p>1.扩展只能扩展一个，混入可以混入多个</p>
+    <p>2.当扩展和混入里面的方法与构造器的方法名重复，扩展和混入的方法不会执行</p>
+
+</h4>
+<hr>
+<div id="app">
+
+</div>
+<script>
+
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            msg:1
+        },
+        methods:{
+            add:function () {
+                console.log()
+                this.msg++
+            }
+        }
+
+    })
+</script>
+</body>
+</html>
