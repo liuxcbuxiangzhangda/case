@@ -8,13 +8,17 @@
 <body>
 <h4>
     <p>第一种选项模板（适合很小的模板）：template属于构造器的一个选项（类似data），但是需要``(tab键上面的键)而不是单引号或者双引号</p>
-    <p>第二种template标签模板：需要给template一个id</p>
+    <p>第二种template标签模板：需要给template一个id,如果template标签里面有多个标签需要一个跟div</p>
     <p>第san种script标签模板（适用外部引用模板）：src可以引用外部模板，注意type的值，还需要给script便签一个id</p>
 </h4>
 <hr>
 <div id="app">
     <template id="app2">
-        <h2>tempalte标签模板{{msg}}</h2>
+        <div>
+            <h2>tempalte标签模板{{msg}}</h2>
+            <h2>tempalte标签模板{{msg}}</h2>
+            <h2>tempalte标签模板{{msg}}</h2>
+        </div>
     </template>
 </div>
 <script type="x-template" id="app3" src="">
@@ -27,7 +31,7 @@
             msg:"hello world"
         },
         //template:`<h2>选项模板{{msg}}</h2>`  //选项模板
-        template:"#app3"
+        template:"#app2"
     })
 </script>
 

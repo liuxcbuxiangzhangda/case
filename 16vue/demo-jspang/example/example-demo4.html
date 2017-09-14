@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slot</title>
+    <script src="../assets/js/vue.js"></script>
+</head>
+<body>
+<h4>
+    <p>slot是标签的内容扩展，也就是说你用slot就可以在自定义组件时传递给组件内容，组件接收内容并输出。</p>
+    <p>1.在自定义组件中传递slot属性</p>
+    <p>2.在模板在接收值（slot标签）</p>
+
+</h4>
+<hr>
+<div id="app">
+  <liuxuechun >
+      <span slot="sex">{{sexvalue}}</span>
+      <span slot="age">20</span>    <!--可以写固定值-->
+      <span slot="international">{{internationalvalue}}</span>
+  </liuxuechun>
+</div>
+<!--定义template标签模板-->
+<template id="tem">
+  <div>
+    <p>性别：<slot name="sex"></slot></p>
+    <p>年纪：<slot name="age"></slot></p>
+    <p>籍贯：<slot name="international"></slot></p>
+  </div>
+</template>
+<script>
+
+    /*自定义局部组件*/
+    var zujian={
+        template:"#tem"
+    };
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            sexvalue:"女",
+            agevalue:26,
+            internationalvalue:"中国"
+        },
+        components:{
+            "liuxuechun":zujian
+        }
+    });
+
+</script>
+</body>
+</html>
