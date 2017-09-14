@@ -3,12 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>JS基础</title>
+    <script src="assets/js/jquery.js"></script>
 </head>
+<style>
+    .isshow{
+        margin-left: 20px;
+    }
+    button{
+        font-size: 20px;
+    }
+</style>
+<script>
+    $(
+        function change() {
+            $(".isshow").css("display","none");//初始化;
+            $(".ischange").click(function () {
+                var showor=$(this).parent().find(".isshow");
+                var showvalue=showor.css("display");
+                if(showvalue=="block"){
+                    showor.css("display","none")
+                }else{
+                    showor.css("display","block")
+                }
+            })
+        }
+    )
+</script>
 <body>
-<h4><a href="example/inter.html">面试题积累</a></h4>
-<h4><a href="example/dryfood.html">实用干货网页</a></h4>
-<h4><a href="example/sysfunction.html">js系统函数</a></h4>
-<h4><a href="example/this.html">this</a></h4>
+<!--面试题积累-->
+<h2>面试题积累</h2>
+<div>
+   <button class="ischange">面试题积累</button>
+    <div class="isshow">
+        <h4><a href="example/inter/interview-demo1.html">1.25道js面试题（前端大全）</a></h4>
+    </div>
+</div>
+<!--实例干货网页-->
+<h2>实用干货网页</h2>
+<div>
+    <button class="ischange">实用干货网页</button>
+    <div class="isshow">
+        <h4><a href="http://mp.weixin.qq.com/s/Hb2FMax21m9IGfoPoxOrNQ">1.前端开发者工具和库</a></h4>
+        <h4><a href="http://mp.weixin.qq.com/s/z64oDwnRqfrE1hvECEgb9w">2.js常用方法和片段</a></h4>
+    </div>
+</div>
+<h2>干货实例</h2>
+<!--js系统函数-->
+<div>
+<button class="ischange">js系统函数</button>
+<div class="isshow">
+    <h4><a href="example/sysfunction/split.html" target="_blank">1.1split()用于把一个字符串分割成字符串数组</a></h4>
+    <h4><a href="http://www.w3school.com.cn/jsref/jsref_split.asp" target="_blank">1.2split()用于把一个字符串分割成字符串数组</a></h4>
+    <h4>待整理</h4>
+    2、join()用于把数组中的所有元素放入一个字符串,用参数符号隔开
+    3、toString()
+    4、valueOf()
+    5、toLocaleString()
+    每个对象都有3、4、5这三个函数，在Date类型中valueOf是返回的毫秒数
+    6、alert()
+    7、prompt()
+    8、confirm()
+    都会改变原数组：
+    9、push()在数组末尾增加项，函数返回被修改后数组的长度
+    10、pop()从数组末尾减去项，函数返回移除的项（栈数据结构）
+    11、shift（）从数组第一项减去项，函数返回移除的项（队列数据结构）
+    12、unshift()从数组第一项增加项，返回被修改后数组的长度
+    13、reverse() 数组反转
+    14、sort（）先调用了每一项的toString()方法，然后用得到的字符串进行比较，可能造成排序不准确，可以接受比较函数（5.2.5）
+    15、splice（）作用是删除，插入，替换项。共三个参数，起始位置，删除数量，增加的项。返回删除的项组成的数组
+    不会改变原数组（5.2.6）
+    15、concat()创建原数组的副本，连接数组。相对push，unshift来说concat不会改变原数组
+    16、slice（）参数确定起始位置剪切数组，不包括结束位置的项。当参数有负数时，用数组长度加这个参数确定位置。当开始位置大于结束位置返回空数组
+    17、indexOf()和LastIdexOf（）两个参数，第一个参数必须（查找的内容），第二个参数可选（查找截止地方）。都返回查找到的位置，没有查到就返回-1，一个从前查找，一个从尾部查找
+    18、5个迭代函数（遍历数组）5.2.8
+    每一个函数都有两个参数，一个是必须的function，一个是可选的作用域
+    every（）数组中的每一项都执行给定函数，当每一项都返回true那么every函数返回true
+    some（）数组中的每一项都执行给定函数，当有一项都返回true那么some函数返回true
+    map（）返回一个数组，该数组中的每一项是原数组执行指定函数的结果
+    forEach（）没有返回值，只是对数组中的每一项执行指定函数，与for循环一致
+    filter（）它 利用 指定 的 函数 确定 是否 在 返回 的 数组 中 包含 的 某 一项（过滤），返回满足条件的项组成的数组
+    19、缩小函数
+    reduce（）和reduceRight（）
+</div>
+</div>
+<!--this-->
+<div>
+    <button class="ischange">this</button>
+    <div class="isshow">
+        <h4>this是不断变化的，但是一定是指调用函数的那个对象</h4>
+        <h4><a href="https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651551779&idx=1&sn=7054a2559ee2f42bcf78210fb99b5d4d&chksm=8025afe2b75226f45e213945c5b815aa571f26b0ebc516dd88ff7c734e1e709cfd8f8a18315a&mpshare=1&scene=23&srcid=0815AAKpj7TlsX9ALNdcFgZZ#rd" target="_blank">1.前端大全js的this总结</a></h4>
+        <h4><a href="http://www.jb51.net/article/41656.htm" target="_blank">2.js的this总结</a></h4>
+        <h4><a href="example/this/this-demo1.html">3.this</a></h4>
+    </div>
+</div>
+
 <h4><a href="example/checkonetr.html" target="_blank">1.table选择一列就选择整行</a></h4>
 <h4><a href="example/date.html" target="_blank">2.时间对象手册gettime（），getday（）</a></h4>
 <h4><a href="example/underscore-template.html" target="_blank">3.1模板引擎:underscore</a></h4>
@@ -23,4 +111,5 @@
 <h4><a href="example/typeof&&tostring.html" target="_blank">12.typeof和tostring判断类型区别等</a></h4>
 
 </body>
+
 </html>

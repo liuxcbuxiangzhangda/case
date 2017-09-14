@@ -17,3 +17,7 @@
 7.doc复制：标记 然后选择要复制的内容 鼠标右键或者enter
 
 8.doc中切换输入法 ctrl+空格
+
+
+webstrom:ctrl+f:查找字段
+      ctrl+shift+n查找文件
