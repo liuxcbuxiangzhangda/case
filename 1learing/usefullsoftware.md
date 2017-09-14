@@ -15,3 +15,5 @@ markdownpad是Windows下的一个多功能Markdown（标记性语言）编辑器
 ##node和yarn##
 ##FTP工具：flashFXP##
 ##python##
+##vue的调试工具：vue-devtool##
+[http://www.cnblogs.com/mmzuo-798/p/6928532.html](http://www.cnblogs.com/mmzuo-798/p/6928532.html)

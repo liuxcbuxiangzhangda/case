@@ -23,6 +23,7 @@
             console.log("构造器混入执行"+this.msg)
         }
     };
+    /*全局混入*/
     Vue.mixin({
         updated:function () {
             console.log("全局混入执行")

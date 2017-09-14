@@ -35,6 +35,9 @@ mvm框架
 
 ![](https://i.imgur.com/zFuVrAQ.png)
 
+###安装vue的调试工具：vue-devtools###
+[http://www.cnblogs.com/mmzuo-798/p/6928532.html](http://www.cnblogs.com/mmzuo-798/p/6928532.html)
+
 ###组件###
 一个组件就是一个.vue文件（html：展现层，js：model层，css），这个vue文件在webpack打包的时候会被打包成浏览器能识别的html
 
