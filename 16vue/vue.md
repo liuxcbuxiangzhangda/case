@@ -15,6 +15,10 @@ git上面的：
 [https://vuejs-templates.github.io/webpack/](https://vuejs-templates.github.io/webpack/)
 
 
+###学习教程###
+vue基础 vue-cli vue-router vuex
+
+vue+vuex+weex+axios
 
 ###vue特点###
 自带热更新，
@@ -26,7 +30,13 @@ mvm框架
 使用命名行安装搭建vue工程，省去很多麻烦
 
 ###新建项目和搭建环境：###
-下载node和git，设置npm镜像（参照nativeApp的教程），全局安装vue-cli（才能使用vue命令）,创建新项目（vue init webpack 项目名称）webpack是项目类型，cd 项目名称，安装所有依赖（npm install），npm run dev，开始项目（只需修改src文件夹中的内容）
+下载node和git——设置npm镜像（参照nativeApp的教程）——全局安装vue-cli（才能使用vue命令）——创建新项目（vue init webpack 项目名称）项目名称不能有大写，webpack是项目类型——cd 项目名称，安装所有依赖（npm install）——npm run dev，开始项目（只需修改src文件夹中的内容）
+
+jspang的项目搭建（详细分析）：[http://jspang.com/2017/04/10/vue-cli/](http://jspang.com/2017/04/10/vue-cli/)
+
+1.在webpack找到入口文件，<style scoped></style> scoped限制只在本模板中css起作用
+
+2.开发完成后，npm run build打包 然后上传到服务器
 
 去掉配置的严格模式，不然少了空格都报报错
 ![](https://i.imgur.com/X42rTW1.png)
@@ -38,48 +48,13 @@ mvm框架
 ###安装vue的调试工具：vue-devtools###
 [http://www.cnblogs.com/mmzuo-798/p/6928532.html](http://www.cnblogs.com/mmzuo-798/p/6928532.html)
 
-###组件###
-一个组件就是一个.vue文件（html：展现层，js：model层，css），这个vue文件在webpack打包的时候会被打包成浏览器能识别的html
 
 ###vue对象选项##
-new Vue（{各字段}）
-
-data:数据
-
-computed：计算属性
-
-methods：方法
-
-watch：监听数据变化
-
-components：注册组件
-
-props：组件之间调用的时候，子组件可以设置属性名
-
 ###模版指令###
-写在html中的。vue对象中的设置通过指令进行关联的
+###全局API###
 
-v-text：
-
-v-html：
-
-{{}}：
-
-v-if：直接不渲染
-
-v-show：渲染了，只不过通过display：none隐藏
-
-v-for：列表循环渲染
-
-注：visibility和diaplay:none,ng-if和ng-show,v-if和v-show,v-for和ng-reapeat区别
-
-注：{{}}是v-text的简写，v-html可以识别html标签
-
-v-on：事件绑定 简写@
-
-v-bind：属性绑定 ：class和：src简写
-
-v-model：随表单控件类型的不同而不同，只在input select textarea里面用
+###组件###
+一个组件就是一个.vue文件（html：展现层，js：model层，css），这个vue文件在webpack打包的时候会被打包成浏览器能识别的html
 
 ###组件分类及组件之间的调用，父向子，子向父###
 按功能，按结构
@@ -88,8 +63,13 @@ v-model：随表单控件类型的不同而不同，只在input select textarea�
 
 子向父传递值：$emit,$dispatch...
 
-###全局API###
+###vue-router（技术胖教程）###
+1.导航：<router-link to=""></router-link>
 
+2.子路由配置
+
+3.参数传递（两种方式，常用router-link ：to）
+> 当有子路由时，主路由在index.js中不能设置name属性
 ###注意###
 index.html是项目的入口
 

@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<h4><a href="https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552588&idx=1&sn=85701109cec1424d39cd31b4ff1c9b7a&chksm=8025ac8db752259b83d8b39074aa350375b6ef5c0f21234c7a993b5302b17d50961d21bd7da5&mpshare=1&scene=23&srcid=0909MVKkH9MjVrDStX5gUlp8#rd">题目：25题js面试</a></h4>
+<h4><a href="https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651552588&idx=1&sn=85701109cec1424d39cd31b4ff1c9b7a&chksm=8025ac8db752259b83d8b39074aa350375b6ef5c0f21234c7a993b5302b17d50961d21bd7da5&mpshare=1&scene=23&srcid=0909MVKkH9MjVrDStX5gUlp8#rd" target="_blank">题目：25题js面试</a></h4>
 <h4>答案在控制台查看</h4>
 <script>
     //第二题
@@ -46,7 +46,22 @@
     }
     console.log(foo1());
     console.log(foo2());
-
+  //第八题   JavaScript中的数字和浮点精度的处理相同，因此，可能不会总是产生预期的结果
+    console.log(0.1 + 0.2);
+    console.log(0.1 + 0.2 == 0.3);
+    //第十题 输出顺序
+    (function() {
+        console.log(1);
+        setTimeout(function(){console.log(2)}, 1000);
+        setTimeout(function(){console.log(3)}, 0);
+        console.log(4);
+    })();
+    //第十一题 写一个简单的函数（少于80个字符），要求返回一个布尔值指明字符串是否为回文结构
+    function isPalindrome(str) {
+        str = str.replace(/\W/g, '').toLowerCase();
+        return (str == str.split('').reverse().join(''));
+    }
+    console.log(isPalindrome("A car, a man, a maraca"))
 </script>
 </body>
 </html>
