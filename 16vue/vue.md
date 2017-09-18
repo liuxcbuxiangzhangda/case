@@ -5,6 +5,8 @@
 
 技术胖[http://jspang.com/](http://jspang.com/)：注重基础
 
+纯金：[http://www.chungold.com/](http://www.chungold.com/)
+
 
 官网：[https://cn.vuejs.org/](https://cn.vuejs.org/)
 
@@ -70,6 +72,29 @@ jspang的项目搭建（详细分析）：[http://jspang.com/2017/04/10/vue-cli/
 
 3.参数传递（两种方式，常用router-link ：to）
 > 当有子路由时，主路由在index.js中不能设置name属性
+
+4.单页面多路由：一个页面多个<router-view>
+> 坑：配置路由是compnents而不是之前的component
+
+5.url传递参数（可以正则，以括号形式传递）
+
+6.重定向redirect，还可以带参数的重定向
+> 坑：别名请不要用在path为’/’中，如下代码的别名是不起作用的。
+> 
+> redirect：redirect是直接改变了url的值
+alias：URL路径没有别改变，这种情况更友好，让用户知道自己访问的路径，只是改变了<router-view>中的内容。
+
+7.路由过度动画<transition name="">
+
+> in-out:新元素先进入过渡，完成之后当前元素过渡离开。
+> 
+> out-in:当前元素先进行过渡离开，离开完成后新元素过渡进入
+
+8.mode和404
+
+9.路由中的钩子函数
+
+> mode的两个值：histroy(去掉锚点) hash
 ###注意###
 index.html是项目的入口
 
