@@ -22,7 +22,7 @@ es6 webpack
 
 vue基础 vue-cli vue-router vuex
 
-vue+vuex+weex+axios
+vue+vuex+weex+axios（vue与后台结合）
 
 ###vue特点###
 自带热更新，
@@ -104,7 +104,7 @@ alias：URL路径没有别改变，这种情况更友好，让用户知道自己
 > 
 > this.$router.push(‘/xxx ‘) 指定跳转
 
-###vuex###
+###vuex：不要过度使用，能传递参数就传递参数，公用的才使用vuex###
 1.状态对象赋值给内部对象（把stroe.js中的值赋给模板里data），三种方法
 > 通过computed的计算属性直接赋值
 > 
@@ -123,6 +123,12 @@ alias：URL路径没有别改变，这种情况更友好，让用户知道自己
 	methods:mapMutations([
 	        'add','reduce'
 	]),'
+
+3.getters
+
+4.actions(与mutations作用差不多但是actions支持异步)
+
+5.模块组
 ###注意###
 index.html是项目的入口
 
