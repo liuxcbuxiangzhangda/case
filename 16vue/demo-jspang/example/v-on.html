@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-on&&methods</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+
+<body>
+<h4>
+    <p>1.事件绑定和监听</p>
+    <p>2.简写是@</p>
+    <p>3.还可以绑定键盘事件和键盘码</p>
+</h4>
+<hr>
+<div id="app">
+    得分：{{score}}<br/>
+    <button v-on:click="addscore">加分</button>
+    <button @click="subscore">减分</button><br/>
+    输入要加的分数：<input type="text" v-on:keyup.enter="moreadd" v-model="morescore">
+
+</div>
+<script>
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            score:0,
+            morescore:1
+        },
+        methods:{
+            addscore:function(){
+                return this.score++
+            },
+            subscore:function(){
+                return this.score--
+            },
+            moreadd:function(){
+                this.score=this.score+parseInt(this.morescore)
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

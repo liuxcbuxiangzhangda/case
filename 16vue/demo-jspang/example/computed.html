@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>computed选项</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+<body>
+<h4>
+    <p>1.0computed 的作用主要是对原数据进行改造输出，而且原始数据没有被修改。改造输出：包括格式的编辑，大小写转换，顺序重排，添加符号……</p>
+</h4>
+<hr>
+<div id="app">
+<p>原始数据展示：{{price}}</p>
+<p>computed数据展示：{{newprice}}</p>
+
+    <h4>原始数据展示</h4>
+    <ul>
+       <li v-for="item in newslist">{{item.title}}---{{item.data}}</li>
+    </ul>
+    <h4>computed数据展示</h4>
+    <ul>
+        <li v-for="item in reversnewslist">{{item.title}}---{{item.data}}</li>
+    </ul>
+</div>
+<script>
+    var newslist=[
+        {title:"dddgsg",data:"2017/3/24"},
+        {title:"luiui",data:"2017/3/25"},
+        {title:"kfgd",data:"2017/3/27"},
+        {title:"loijj",data:"2017/3/28"}
+    ]
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            price:100,
+            newslist:newslist
+        },
+        computed:{
+            newprice:function () {
+                return "￥"+this.price+"元"
+            },
+            reversnewslist:function () {
+                return this.newslist.reverse()  //此时原数据被污染不是因为vue的原因，而是reverse系统函数本身的原因
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-model</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+<body>
+<h4>
+    <p>数据双向绑定（都和表单有关系）</p>
+</h4>
+<hr>
+<div id="app">
+    绑定值：{{msg}}<br/>
+
+    <h4>文本框</h4>
+
+    v-model:<input type="text" v-model="msg"><br/>
+    v-model.lazy:<input type="text" v-model.lazy="msg">:lazy修饰符不同步绑定，当文本框失去焦点时才反应<br/>
+    v-model.number:<input type="text" v-model.number="msg">:number:要求是数字的时候才绑定，但是开始输入字符串会默认字符串绑定<br/>
+    v-model.trim:<input type="text" v-model.trim="msg">:trim去除输入的前后空格
+
+    <h4>文本域</h4>
+    <textarea name="" id="" cols="30" rows="10" v-model="msg"></textarea>
+
+    <h4>多选按钮绑定一个值</h4>
+    <input type="checkbox" id="yes" value="mm" v-model="istrue">
+    <label for="yes">{{istrue}}</label>
+
+    <h4>多选按钮绑定数组</h4>
+    <input type="checkbox" value="liu" v-model="names">liu
+    <input type="checkbox" value="xue" v-model="names">xue
+    <input type="checkbox" value="chun" v-model="names">chun
+     选中的名字：{{names}}
+    <h4>单选框绑定</h4>
+    <input type="radio" value="男" v-model="sex">男
+    <input type="radio" value="女" v-model="sex">女
+    <p>该性别是：{{sex}}</p>
+
+</div>
+<script>
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            msg:"hello world!!",
+            istrue:true,
+            names:[],
+            sex:"男"
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>methods选项</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+<body>
+<h4>
+    <p>1.传值</p>
+    <p>2.methods中的$event参数（交互性很高的才会用）</p>
+    <p>3.native  给组件绑定构造器里的原生事件（组件直接用v-on绑定的事件不起作用）</p>
+    <p>4.vue作用域外要调用vue里面methods方法</p>
+</h4>
+<hr>
+<div id="app">
+    <p>点击按钮改变值：{{msg}}</p>
+    <button v-on:click="add(3)">传值增加</button>
+
+    <p><button @click="conevent($event)">打印event</button></p>
+     <btnname @click.native="add(2)"></btnname>
+</div>
+<!--vue作用域外调用-->
+<p><button onclick="mm.add(5)">mm是vue实例的对象</button></p>
+<script>
+    var btn={
+        template:`<button>自定义组件按钮</button>`
+    };
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            msg:1
+        },
+        methods:{
+            add:function (num) {
+                return this.msg=this.msg+num
+            },
+            conevent:function (event) {
+                console.log(event)
+            }
+        },
+        components:{
+            "btnname":btn
+        }
+
+    })
+</script>
+</body>
+</html>

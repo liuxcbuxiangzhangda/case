@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-if v-else v-show</title>
+</head>
+<script src="../assets/js/vue.js"></script>
+
+<body>
+<h4>
+    <p>1.v-if和v-else配对使用，一个if对应一个else，不能隔开放置</p>
+    <p>2.v-if：判断是否加载，在条件为真时加载，可以减轻服务器的压力</p>
+    <p>3.v-show：提前加载，调整css dispaly属性，可以使客户端操作更加流畅</p>
+    <p>4.v-if&&v-show,ng-if&&ng-show,visibility&&display:none</p>
+</h4>
+<div id="app">
+    <div v-if="islogin">你好，刘</div>
+    <div v-else>请登录</div>
+    <div v-else>mmm</div>  <!--没有作用的，只能一个if对应一个else-->
+    <div v-show="islogin">你好，雪</div>
+
+</div>
+<script>
+    var mm=new Vue({
+        el:"#app",
+        data:{
+            islogin:false
+        }
+    })
+</script>
+</body>
+</html>
