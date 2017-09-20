@@ -74,13 +74,13 @@ npm install
 npm命令
 [http://blog.csdn.net/haidaochen/article/details/8546796](http://blog.csdn.net/haidaochen/article/details/8546796)
 
-> --save指把库的信息写入packjson 
+> --save指把库的信息写入packjson.js中Devlopments生产环境 
 > 
 > -v指写入开发环境，packjson.js中devDevlopments开发环境，
 > 
 > packjson.js中scripts运行要用npm run 名字，但是自带的start和test直接名字，
 > 
-> 全局安装存在系统，非全局安装存在node-mudel
+> 全局安装（-g）存在系统，非全局安装存在node-mudel
 
 本地安装
 1. 将安装包放在 ./node_modules 下（运行 npm 命令时所在的目录），如果没有 node_modules 目录，会在当前执行 npm 命令的目录下生成 node_modules 目录。
