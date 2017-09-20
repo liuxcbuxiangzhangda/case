@@ -18,6 +18,8 @@ git上面的：
 
 
 ###学习教程###
+es6 webpack
+
 vue基础 vue-cli vue-router vuex
 
 vue+vuex+weex+axios
@@ -32,13 +34,13 @@ mvm框架
 使用命名行安装搭建vue工程，省去很多麻烦
 
 ###新建项目和搭建环境：###
-下载node和git——设置npm镜像（参照nativeApp的教程）——全局安装vue-cli（才能使用vue命令）——创建新项目（vue init webpack 项目名称）项目名称不能有大写，webpack是项目类型——cd 项目名称，安装所有依赖（npm install）——npm run dev，开始项目（只需修改src文件夹中的内容）
+下载node和git——设置npm镜像（参照nativeApp的教程）——全局安装vue-cli（才能使用vue命令）——创建新项目（vue init webpack 项目名称）项目名称不能有大写，webpack是项目类型——cd 项目名称，安装所有依赖（npm install）安装vuex（npm install vuex --save）——npm run dev，开始项目（只需修改src文件夹中的内容）
 
 jspang的项目搭建（详细分析）：[http://jspang.com/2017/04/10/vue-cli/](http://jspang.com/2017/04/10/vue-cli/)
 
 1.在webpack找到入口文件，<style scoped></style> scoped限制只在本模板中css起作用
 
-2.开发完成后，npm run build打包 然后上传到服务器
+2.开发完成后，修改build-index.js的路径然后（./）npm run build打包 然后上传到服务器
 
 去掉配置的严格模式，不然少了空格都报报错
 ![](https://i.imgur.com/X42rTW1.png)
@@ -103,6 +105,24 @@ alias：URL路径没有别改变，这种情况更友好，让用户知道自己
 > this.$router.push(‘/xxx ‘) 指定跳转
 
 ###vuex###
+1.状态对象赋值给内部对象（把stroe.js中的值赋给模板里data），三种方法
+> 通过computed的计算属性直接赋值
+> 
+> 通过mapState的对象来赋值
+> 
+> 通过mapState的数组来赋值
+> 
+> 坑：import {mapState}而不是mapState
+
+2.mutations 改变状态对象
+> 传值
+> 
+> 简化模板的使用：
+> 
+    import { mapState,mapMutations } from 'vuex
+	methods:mapMutations([
+	        'add','reduce'
+	]),'
 ###注意###
 index.html是项目的入口
 
