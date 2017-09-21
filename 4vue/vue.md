@@ -20,10 +20,16 @@ git上面的：
 ###学习教程###
 es6 webpack
 
-vue基础 vue-cli vue-router vuex
+vue基础 vue-cli（vue脚手架） vue-router vuex（状态管理） element（vue的组件库）
 
 vue+vuex+weex+axios（vue与后台结合）
 
+安装：
+vue-cli（全局安装 npm install vue-cli -g）
+
+vue-router：搭建脚手架时安装
+
+vuex，element安装在生产环境（npm install vuex和element-ui --save）
 ###vue特点###
 自带热更新，
 

@@ -3,86 +3,86 @@
   <component name="ChangeListManager">
     <list default="true" id="83f31e93-6c4e-4d86-90cf-62b29ab99d56" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4js/wenhai/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/LICENSE" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/yarn.lock" afterPath="$PROJECT_DIR$/4js/wenhai/yarn.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/LICENSE" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/scope.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/scope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/fs.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/fs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/4js.md" afterPath="$PROJECT_DIR$/4js/4js.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs.cmd" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs.cmd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/utils.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/stringify.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/stringify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/output.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/output.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/once/once.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/once/once.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/semver.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/semver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/propmangle.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/propmangle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/mozilla-ast.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/mozilla-ast.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/utils.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/clone.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/clone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/CHANGELOG.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8pulgs/1plugsCatalog.md" afterPath="$PROJECT_DIR$/8pulgs/1plugsCatalog.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/split.html" afterPath="$PROJECT_DIR$/4js/split.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/LICENSE" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/source-map/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/source-map/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/couse.md" afterPath="$PROJECT_DIR$/4js/wenhai/couse.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/compress.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/compress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/ast.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/ast.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/.yarn-integrity" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/.yarn-integrity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone-stats/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone-stats/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/CHANGELOG.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8pulgs/sweetalert.html" afterPath="$PROJECT_DIR$/8pulgs/sweetalert.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/clone.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/clone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/LICENSE" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/once/once.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/once/once.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/mozilla-ast.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/mozilla-ast.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/parse.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/.npmignore" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/domprops.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/domprops.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/stringify.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/stringify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver.cmd" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver.cmd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/graceful-fs.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/graceful-fs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/once/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/once/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/polyfills.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/polyfills.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/parse.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/source-map/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/source-map/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/node.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/transform.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/transform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/parse.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/output.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/output.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/parse.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/utils.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/utils.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/transform.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone-stats/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone-stats/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/graceful-fs.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/graceful-fs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/polyfills.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/polyfills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/exports.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/exports.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/LICENSE" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1learing/2interview.md" afterPath="$PROJECT_DIR$/1learing/2interview.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/compress.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/compress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/stringify.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/stringify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/strip-ansi/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/once/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/once/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5jquery/table.html" afterPath="$PROJECT_DIR$/5jquery/table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/exports.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/exports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1learing/2interview.md" afterPath="$PROJECT_DIR$/1learing/2interview.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/split.html" afterPath="$PROJECT_DIR$/4js/split.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/propmangle.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/propmangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/through2/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/stringify.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/stringify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs.cmd" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/node.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/.yarn-integrity" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/.yarn-integrity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/readme.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/has-ansi/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/LICENSE" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/once/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/once/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/fs.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/graceful-fs/fs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/parse.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/test/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/ansi-styles/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/4js.md" afterPath="$PROJECT_DIR$/4js/4js.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/semver.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/semver/semver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/supports-color/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/source-map/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/source-map/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/domprops.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/tools/domprops.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/README.md" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/vinyl/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/replace-ext/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/yarn.lock" afterPath="$PROJECT_DIR$/4js/wenhai/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/.npmignore" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/clone/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/scope.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/scope.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/ast.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/uglify-js/lib/ast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver.cmd" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/semver.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8pulgs/1plugsCatalog.md" afterPath="$PROJECT_DIR$/8pulgs/1plugsCatalog.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/couse.md" afterPath="$PROJECT_DIR$/4js/wenhai/couse.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/index.js" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/chalk/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/accord/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/4js/wenhai/node_modules/qs/package.json" />
     </list>
     <ignored path="trunk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,12 +103,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3js/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="component-1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/example/component-1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-80">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#hedw#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +194,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo-jspang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo-jspang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,20 +387,20 @@
       <workItem from="1502781771725" duration="658000" />
       <workItem from="1502785613526" duration="613000" />
       <workItem from="1505873448009" duration="854000" />
+      <workItem from="1505983046040" duration="1798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20483000" />
+    <option name="totallyTimeSpent" value="22281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -351,6 +417,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -376,6 +443,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/3js/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/3js/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -436,35 +511,62 @@
     <entry file="file://$PROJECT_DIR$/3js/index-jquery.html" />
     <entry file="file://$PROJECT_DIR$/3js/game.htm" />
     <entry file="file://$PROJECT_DIR$/3js/handlebar.html" />
-    <entry file="file://$PROJECT_DIR$/1learing/interview/text/interview-demo1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1learing/interview/text/interview-demo2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="7" column="255" lean-forward="false" selection-start-line="7" selection-start-column="255" selection-end-line="7" selection-end-column="255" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1learing/interview/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="86" lean-forward="false" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/1learing/interview/text/interview-demo1.html" />
+    <entry file="file://$PROJECT_DIR$/1learing/interview/text/interview-demo2.html" />
+    <entry file="file://$PROJECT_DIR$/1learing/interview/menu.html" />
     <entry file="file://$PROJECT_DIR$/3js/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/example/component-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505206634263" expanded="true" signature="363:372" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/example/component-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/example/component-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505207795168" expanded="true" signature="439:448" ph="..." />
+            <marker date="1505207795168" expanded="true" signature="528:539" ph="..." />
+            <marker date="1505207795168" expanded="true" signature="619:629" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4vue/demo-jspang/example/component-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#hedw#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
