@@ -1,22 +1,4 @@
 
-慕课网：注重项目搭建
-
-[https://github.com/liuxcbuxiangzhangda/vue-demo-muke](https://github.com/liuxcbuxiangzhangda/vue-demo-muke)
-
-技术胖[http://jspang.com/](http://jspang.com/)：注重基础
-
-纯金：[http://www.chungold.com/](http://www.chungold.com/)
-
-
-官网：[https://cn.vuejs.org/](https://cn.vuejs.org/)
-
-git上面的：
-
-[https://github.com/vuejs](https://github.com/vuejs)
-
-[https://vuejs-templates.github.io/webpack/](https://vuejs-templates.github.io/webpack/)
-
-
 ###学习教程###
 es6 webpack
 
@@ -34,6 +16,27 @@ vuex，element，axios安装在生产环境（npm install vuex和element-ui --sa
 下载了element还需要在main.js里面引用
 
 下载了axios在哪里使用就在哪里引用（import）
+###注意###
+index.html是项目的入口
+
+import(es6的语法)等价于require
+
+组件注册了就可以在html中当标签使用
+
+    new Vue({字段})等价于export default{字段}
+    data(){return{}}等价于data:function(){return{}}
+
+
+
+webstrom添加模板支持，写代码的时候可以提示
+[http://www.jianshu.com/p/142dae4f8b51](http://www.jianshu.com/p/142dae4f8b51)
+
+web储存
+![](https://i.imgur.com/kDhsOZQ.png)
+
+![](https://i.imgur.com/pr1hY4w.png)
+
+
 ###vue特点###
 自带热更新，
 
@@ -139,24 +142,4 @@ alias：URL路径没有别改变，这种情况更友好，让用户知道自己
 4.actions(与mutations作用差不多但是actions支持异步)
 
 5.模块组
-###注意###
-index.html是项目的入口
-
-import(es6的语法)等价于require
-
-组件注册了就可以在html中当标签使用
-
-    new Vue({字段})等价于export default{字段}
-    data(){return{}}等价于data:function(){return{}}
-
-
-
-webstrom添加模板支持，写代码的时候可以提示
-[http://www.jianshu.com/p/142dae4f8b51](http://www.jianshu.com/p/142dae4f8b51)
-
-web储存
-![](https://i.imgur.com/kDhsOZQ.png)
-
-![](https://i.imgur.com/pr1hY4w.png)
-
 
