@@ -13,6 +13,16 @@ nodejs社区：[https://www.npmjs.com/](https://www.npmjs.com/)
 
 对应代码网站（视频对应）：[http://yuankuwang.com/web/index.php?r=search%2Findex&searchType=0&searchWord=+node.js&restype=0&classify=0#](http://yuankuwang.com/web/index.php?r=search%2Findex&searchType=0&searchWord=+node.js&restype=0&classify=0#)
 
+安装node-sass失败处理方案：[http://www.mikel.cn/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/javascript/node-sass-%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%E5%BF%97%E6%96%87%E5%B7%A5%E4%BD%9C%E5%AE%A4.html](http://www.mikel.cn/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/javascript/node-sass-%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%E5%BF%97%E6%96%87%E5%B7%A5%E4%BD%9C%E5%AE%A4.html)
+
+
+npm安装模块：[http://www.ruanyifeng.com/blog/2016/01/npm-install.html](http://www.ruanyifeng.com/blog/2016/01/npm-install.html)
+
+安装淘宝镜像：
+
+npm config set registry https://registry.npm.taobao.org --global
+
+npm config set disturl https://npm.taobao.org/dist --global
 
 模块化：避免工作的重复，增加复用，争取一个功能一个模块，促进多人同时编写代码
 
