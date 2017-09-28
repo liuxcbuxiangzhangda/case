@@ -1,3 +1,5 @@
+H5屏幕适配标签设置：[http://blog.csdn.net/zxf13598202302/article/details/51594661](http://blog.csdn.net/zxf13598202302/article/details/51594661)
+
 ###DriedFood###
 1、移动端和web前端的区别
 > [https://www.zhihu.com/question/20269059](https://www.zhihu.com/question/20269059)
