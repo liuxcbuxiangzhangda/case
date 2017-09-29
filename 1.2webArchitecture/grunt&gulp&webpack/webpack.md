@@ -1,4 +1,6 @@
+技术胖视频
 
+官网：[https://doc.webpack-china.org/guides/](https://doc.webpack-china.org/guides/)
 Webpack就是学习配置文件，配置文件相当于一个说明书。webpack相当于一个机器，入口文件相当于原料，按说明书（配置文件）操作，然后输出产品（出口文件）。配置文件里面配置要做的事情，webpack根据需要调用第三方软件去解决要做的事情，webpack实现自动化，让编程更快速，修改很容易（相比自己写的代码很好具有可读性），把很多事情整合起来做。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Coffeescript、 LESS 等
 
 webpack可以做的事情：
