@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datatables生成表格，切换选中行和全选</title>
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/datatables/datatables.all.min.js"></script>
+    <link rel="stylesheet" href="../../js/datatables/datatables.min.css">
+</head>
+<body>
+<table id="example" class="checkTb">
+</table>
+
+</body>
+<script>
+$(function () {
+    var exampletable=$("#example").DataTable({
+        "ajax": "data.txt",
+        "columns": [
+            {"data": "id",
+                "title": "<input id='allCheck' type='checkbox'/>全选",
+                "createdCell": function (nTd, rowData) {
+                    $(nTd).html('<input id="' + rowData + '" type="checkbox"/>');
+                }},
+            { "data": "name","title":"姓名" },
+            { "data": "position","title":"位置" },
+            { "data": "office","title":"办公室" },
+            { "data": "extn","title":"门牌号" },
+            { "data": "start_date","title":"时间"},
+            { "data": "salary","title":"价格" }
+        ]
+    });
+    var checkTb=$(".checkTb");
+    var checkedTr;//已经选中tr的数量
+    var trLength;//表格的tr数量
+    /*判断表头checkbox是否应该选中*/
+    function isAllChecked() {
+        var checkTbTheadTrTh=$(".checkTb thead tr th");
+        checkedTr=exampletable.rows('.selected').data().length;
+        trLength=exampletable.rows().data().length;
+        if(checkedTr==trLength){
+            checkTbTheadTrTh.children("input").prop("checked", true);
+        }else{
+            checkTbTheadTrTh.children("input").prop("checked", false);
+        }
+    }
+    /*点击input*/
+    checkTb.on("click","tbody tr td input[type='checkbox']",function (event) {
+        $(this).parents("tr").toggleClass('selected');
+        isAllChecked();
+        event.stopPropagation();
+    });
+    /*点击tr*/
+    checkTb.on("click","tbody tr",function () {
+        $(this).toggleClass('selected');
+        $(this).find("td input[type='checkbox']").prop("checked", $(this).hasClass("selected"));
+        isAllChecked();
+    });
+    /*点击全选按钮*/
+    checkTb.on("click","thead tr th #allCheck",function () {
+        $(this).parents(".checkTb").find("tbody tr").toggleClass('selected');
+        $(this).parents(".checkTb").find("tbody tr input").prop("checked", this.checked);
+    });
+    /*翻页取消全选,当服务器分页才用到，此例不会用*/
+    checkTb.on("page.dt",function () {
+        $(".checkTb thead tr th #allCheck").prop("checked",false)
+    });
+})
+</script>
+</html>

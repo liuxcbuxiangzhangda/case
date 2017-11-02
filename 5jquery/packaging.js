@@ -54,7 +54,7 @@ function Person(name,age,nn) {
 var person1=new Person("xiaohong","23","yigexiaoren");
 console.log(person1.nn(),person1.name);
 
-var mm="#mm .nn ul"
+var mm="#mm .nn ul";
 var nn=[];
 nn=mm.split(" ");
 function weizhi(bb) {
