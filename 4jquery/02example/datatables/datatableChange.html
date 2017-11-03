@@ -58,8 +58,9 @@ $(function () {
     });
     /*点击全选按钮*/
     checkTb.on("click","thead tr th #allCheck",function () {
-        $(this).parents(".checkTb").find("tbody tr").toggleClass('selected');
-        $(this).parents(".checkTb").find("tbody tr input").prop("checked", this.checked);
+        var checkTbTbodyTr=$(this).parents(".checkTb").find("tbody tr");
+        this.checked?checkTbTbodyTr.addClass('selected'):checkTbTbodyTr.removeClass('selected');
+        checkTbTbodyTr.find("input").prop("checked", this.checked);
     });
     /*翻页取消全选,当服务器分页才用到，此例不会用*/
     checkTb.on("page.dt",function () {
