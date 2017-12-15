@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo演示</title>
+</head>
+<style>
+    ul{
+        float: left;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    select{
+        float: left;
+        margin-left: 0px;
+        width: 100px;
+        height:150px;
+    }
+</style>
+<body>
+<select multiple="multiple"  id="left">
+    <option class="one">刘备</option>
+    <option class="one">关羽</option>
+    <option class="one">张飞</option>
+    <option class="one">马超</option>
+</select>
+<ul>
+    <li><input type="button" value=">" onclick="moveRight();"></li>
+    <li><input type="button" value=">>" onclick="moveAllRight();"></li>
+    <li><input type="button" value="<" onclick="zuoyi()"></li>
+    <li><input type="button" value="<<" onclick="quanzuoyi()"></li>
+</ul>
+<select multiple="multiple" id="right"></select>
+</body>
+<script type="text/javascript">
+    var myLeft = document.getElementById('left');
+    var myRight = document.getElementById('right');
+    console.log(myLeft.options.length);
+    function moveRight() {
+        for(var i=0;i<myLeft.options.length;i++){
+            if(myLeft.options[i].selected){
+                myRight.appendChild(myLeft.options[i]);
+                i--;
+            }
+        }
+    }
+    function moveAllRight() {
+        for(var i=0;i<myLeft.options.length;i++){
+            myRight.appendChild(myLeft.options[i]);
+            i--;
+//            console.log(i);
+        }
+    }
+    function zuoyi() {
+        for(var i=0;i<myRight.options.length;i++){
+            if(myRight.options[i].selected){
+                myLeft.appendChild(myRight.options[i]);
+                i--;
+            }
+        }
+    }
+    function quanzuoyi() {
+        for(var i=0;i<myRight.options.length;i++){
+            myLeft.appendChild(myRight.options[i]);
+            i--;
+//            console.log(i);
+        }
+    }
+</script>
+</html>

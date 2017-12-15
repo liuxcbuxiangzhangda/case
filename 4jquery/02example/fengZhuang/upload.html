@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装上传控件</title>
+    <link rel="stylesheet" href="../../03assets/webuploader/webuploader.css">
+    <script src="../../03assets/js/jquery-3.1.1.min.js"></script>
+    <script src="../../03assets/webuploader/webuploader.min.js"></script>
+</head>
+<body>
+<div id="uploader" class="wu-example">
+    <div class="btns">
+        <div id="picker">选择文件</div>
+    </div>
+    <!--用来存放文件信息-->
+    <div id="thelist" class="uploader-list"></div>
+</div>
+</body>
+<script>
+    /*对象*/
+    function UploadFile(pick,list,url) {
+        this.pick=pick; //选择文件按钮
+        this.list=list; //存储上传成功文件的div
+        this.url=url;  //地址
+        this.listArry=[];
+        this.init();
+        this.webUploader;
+    }
+    UploadFile.prototype={
+        init:function () {
+            var uploader = this.create();
+            this.bindEvent(uploader);
+            return uploader;
+        },
+        create:function () {
+            this.webUploader = WebUploader.create({
+                auto:true,
+                // swf文件路径
+                swf: '/static/css/plugins/webuploader/Uploader.swf',
+                // 文件接收服务端。
+                server:this.url,
+                pick: this.pick,
+                // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+                resize: false
+            });
+            return this.webUploader;
+        },
+        bindEvent:function (bindedObj) {
+            var me =  this;
+            bindedObj.on( 'fileQueued', function( file ) {
+                var $list=$(me.list);
+                $list.append( '<div id="' + file.id + '" class="item">' +
+                        '<h4 class="info">' + file.name + '</h4>' +
+                        '<p class="state">等待上传...</p>' +
+                        '</div>');
+            });
+            // 文件上传过程中创建进度条实时显示。
+            bindedObj.on( 'uploadProgress', function( file, percentage ) {
+                var $li = $( '#'+file.id ),
+                        $percent = $li.find('.progress .progress-bar');
+                // 避免重复创建
+                if ( !$percent.length ) {
+                    $percent = $('<div class="progress progress-striped active">' +
+                            '<div class="progress-bar" role="progressbar" style="width: 0%">' +
+                            '</div>' +
+                            '</div>').appendTo( $li ).find('.progress-bar');
+                }
+                $li.find('p.state').text('上传中');
+                $percent.css( 'width', percentage * 100 + '%' );
+            });
+            bindedObj.on( 'uploadSuccess', function( file,data ) {
+                $( '#'+file.id ).find('p.state').css("display","none");
+                $( '#'+file.id ).find('h4.info').css("display","none");
+                $( '#'+file.id ).append('<div id="#handle' + file.id + '" class="handleItem">' +
+                        '<a target="_blank"  id="fileInfo">' + file.name + '</a>' +
+                        '<span id="handleDel">删除</span>' +
+                        '</div>' );
+                $($( '#'+file.id + " #fileInfo")).attr("href",Feng.fileSer + data.url);
+                var uploadObj={id:file.id,name:data.originalName,url:data.url};
+                me.listArry.push(uploadObj);
+            });
+            bindedObj.on( 'uploadError', function( file ) {
+                $( '#'+file.id ).find('p.state').text('上传出错');
+            });
+            /*不管上传成功还是失败都会触发uploadComplete事件*/
+            bindedObj.on( 'uploadComplete', function( file ) {
+                $( '#'+file.id ).find('.progress').fadeOut();
+            });
+            /*删除*/
+            $("#thelist").on("click","#handleDel",function () {
+                var delFile=$(this).parent().parent();
+                $.each(me.listArry,function (index,item) {
+                    if(this.id==delFile.prop("id")){
+                        me.listArry.splice(index,1);
+                    }
+                });
+                bindedObj.removeFile(delFile.prop("id"),true );
+                delFile.remove(); //删除页面展示
+            });
+        }
+    };
+    /*使用*/
+    var uploadFile=new UploadFile("#picker","#thelist","/zateLand/upload");
+</script>
+</html>

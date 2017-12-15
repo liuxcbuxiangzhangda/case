@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table全选切换</title>
+    <script src="../03assets/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<table class="tableName">
+    <thead>
+        <tr>
+            <th><input type="checkbox" id="checkall"></th>
+            <th>序号</th>
+            <th>字段</th>
+            <th>类型</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>h</td>
+            <td>fg</td>
+            <td>ddsd</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>h</td>
+            <td>fg</td>
+            <td>ddsd</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>h</td>
+            <td>fg</td>
+            <td>ddsd</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>h</td>
+            <td>fg</td>
+            <td>ddsd</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</body>
+<script>
+    /*选中行切换*/
+    function changeCheck(tableLable) {
+        var checkTb=$(tableLable);
+        var checkedTr=0;//已经选中tr的数量
+        var trLength;//表格的tr数量
+        /*判断表头checkbox是否应该选中*/
+        function isAllChecked() {
+            var checkTbTheadTrTh=$(tableLable).find("thead tr th");
+            checkedTr=0;
+            $(tableLable).find("tbody tr input[type=checkbox]").each(function () {
+                if($(this).prop("checked")){
+                    checkedTr++;
+                }
+            });
+            trLength=$(tableLable).find("tbody tr").length;
+            if(checkedTr==trLength){
+                checkTbTheadTrTh.children("input").prop("checked", true);
+            }else{
+                checkTbTheadTrTh.children("input").prop("checked", false);
+            }
+        }
+        /*点击input*/
+        checkTb.on("click","tbody tr td input[type='checkbox']",function (event) {
+            isAllChecked();
+        });
+        /*点击全选按钮*/
+        checkTb.on("click","thead tr th #checkall",function () {
+            $(this).parents(tableLable).find("tbody tr input[type='checkbox']").prop("checked", this.checked);
+        });
+    }
+    changeCheck(".tableName")
+</script>
+</html>
